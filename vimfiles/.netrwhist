@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='C:/htdocs'
+let g:netrw_dirhist_2='C:/htdocs/a-frame'
+let g:netrw_dirhist_3='C:/htdocs'
+let g:netrw_dirhist_4='\htdocs'
+let g:netrw_dirhist_5='/htdocs/editions_worker'
+let g:netrw_dirhist_6='/htdocs/editions_worker/.settings'
+let g:netrw_dirhist_7='D:\htdocs'

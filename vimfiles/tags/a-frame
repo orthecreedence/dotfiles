@@ -1,0 +1,802 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+&controller	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		public function &controller($class, $params = array(), $overwrite = false, $run_init = true)$/;"	f
+&get_ref	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		public function &get_ref($key, $default = '')$/;"	f
+&library	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		public function &library($class, $params = array(), $overwrite = false, $run_init = true)$/;"	f
+&load_object	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		private function &load_object($class, $params, $run_init, $type = '')$/;"	f
+&model	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		public function &model($class, $params = array(), $overwrite = false, $run_init = true)$/;"	f
+&object	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		public function &object($class, $params = array(), $overwrite = false, $run_init = true)$/;"	f
+&return_object	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		public function &return_object($name)$/;"	f
+AFRAME_DB_MODE_MSSQL	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^	define('AFRAME_DB_MODE_MSSQL', 1);$/;"	d
+AFRAME_DB_MODE_MYSQL	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^	define('AFRAME_DB_MODE_MYSQL', 0);$/;"	d
+AFRAME_DB_MODE_MYSQLI	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^	define('AFRAME_DB_MODE_MYSQLI', 2);$/;"	d
+APP_ERROR_HANDLING	../../../../../cygdrive/d/htdocs/a-frame/core/includes/config.php	/^	if(!defined('APP_ERROR_HANDLING')) define('APP_ERROR_HANDLING', false);$/;"	d
+APP_ERROR_HANDLING	../../../../../cygdrive/d/htdocs/a-frame/skeleton/includes/local.default.php	/^	define('APP_ERROR_HANDLING', true);			\/\/ true = application handles its own errors in controllers\/error_handler.php, false = PHP does error handling$/;"	d
+BASE	../../../../../cygdrive/d/htdocs/a-frame/skeleton/includes/config.php	/^	define('BASE', $app_base);						\/\/ the root directory where the App lies$/;"	d
+CACHE_APC	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^	define('CACHE_APC', 2);$/;"	d
+CACHE_MEMCACHE	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^	define('CACHE_MEMCACHE', 1);$/;"	d
+CACHING	../../../../../cygdrive/d/htdocs/a-frame/skeleton/includes/local.default.php	/^	define('CACHING', true);					\/\/ app-based caching. can be Memcached (default) or a-frame's file-based caching$/;"	d
+CLASSES	../../../../../cygdrive/d/htdocs/a-frame/core/includes/config.php	/^	define('CLASSES', CORE_BASE . '\/core\/classes');$/;"	d
+CONTROLLERS	../../../../../cygdrive/d/htdocs/a-frame/skeleton/includes/config.php	/^	define('CONTROLLERS', BASE . '\/controllers');	\/\/ the root controllers folder$/;"	d
+CORE_BASE	../../../../../cygdrive/d/htdocs/a-frame/core/includes/config.php	/^	define('CORE_BASE', $core_base);$/;"	d
+CORE_INCLUDES	../../../../../cygdrive/d/htdocs/a-frame/core/includes/config.php	/^	define('CORE_INCLUDES', CORE_BASE .'\/core\/includes');$/;"	d
+CRON_CONTROLLER	../../../../../cygdrive/d/htdocs/a-frame/skeleton/includes/config.php	/^	define('CRON_CONTROLLER', 'cron');				\/\/ default name for the built-in cron-job controller$/;"	d
+CRON_JOB	../../../../../cygdrive/d/htdocs/a-frame/core/includes/config.php	/^	if(!defined('CRON_JOB')) define('CRON_JOB', false);$/;"	d
+CRON_JOB	../../../../../cygdrive/d/htdocs/a-frame/skeleton/controllers/cron.php	/^	 * line. Any file which has define('CRON_JOB', true) will activate the cron support (NOT$/;"	d
+CRON_JOB	../../../../../cygdrive/d/htdocs/a-frame/skeleton/scripts/cron.php	/^	define('CRON_JOB', true);$/;"	d
+DATA	../../../../../cygdrive/d/htdocs/a-frame/skeleton/includes/config.php	/^	define('DATA', BASE . '\/data');					\/\/ where file-based data is stored (file cache, session data, etc)$/;"	d
+DATABASE	../../../../../cygdrive/d/htdocs/a-frame/skeleton/includes/local.default.php	/^	define('DATABASE', false);					\/\/ does the app use a database?$/;"	d
+DEBUG	../../../../../cygdrive/d/htdocs/a-frame/skeleton/includes/local.default.php	/^	define('DEBUG', false);						\/\/ debug mode...displays extended debug info for each request$/;"	d
+DS	../../../../../cygdrive/d/htdocs/a-frame/core/includes/config.php	/^	define('DS', DIRECTORY_SEPARATOR);$/;"	d
+ERROR_LEVEL	../../../../../cygdrive/d/htdocs/a-frame/skeleton/includes/local.default.php	/^	define('ERROR_LEVEL', E_ALL | E_NOTICE);	\/\/ our default app PHP error level$/;"	d
+INCLUDES	../../../../../cygdrive/d/htdocs/a-frame/core/includes/config.php	/^	define('INCLUDES', BASE . '\/includes');$/;"	d
+LIBRARY	../../../../../cygdrive/d/htdocs/a-frame/skeleton/includes/config.php	/^	define('LIBRARY', BASE . '\/library');			\/\/ where all the external libraries are kept$/;"	d
+LOGS	../../../../../cygdrive/d/htdocs/a-frame/skeleton/includes/config.php	/^	define('LOGS', DATA . '\/logs');$/;"	d
+MODELS	../../../../../cygdrive/d/htdocs/a-frame/skeleton/includes/config.php	/^	define('MODELS', BASE . '\/models');				\/\/ the root models folder$/;"	d
+MSG_ERROR	../../../../../cygdrive/d/htdocs/a-frame/core/classes/msg.php	/^	define('MSG_ERROR', 1);$/;"	d
+MSG_SUCCESS	../../../../../cygdrive/d/htdocs/a-frame/core/classes/msg.php	/^	define('MSG_SUCCESS', 0);$/;"	d
+ONLY	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		 * Run several queries at once. This function ONLY WORKS for AFRAME_DB_MODE_MYSQLI, using any$/;"	f
+PATH_DISPATCHER	../../../../../cygdrive/d/htdocs/a-frame/skeleton/includes/local.default.php	/^	define('PATH_DISPATCHER', true);			\/\/ true = \/index.php\/framework_request, false = \/index.php?url=framework_request$/;"	d
+PS	../../../../../cygdrive/d/htdocs/a-frame/core/includes/config.php	/^	define('PS', PATH_SEPARATOR);$/;"	d
+ROUTE_LIBRARY	../../../../../cygdrive/d/htdocs/a-frame/skeleton/includes/config.php	/^	define('ROUTE_LIBRARY', false);					\/\/ set to a controller in the controllers\/ directory to use custom routing$/;"	d
+SITE	../../../../../cygdrive/d/htdocs/a-frame/skeleton/includes/local.default.php	/^	define('SITE', 'website.com');				\/\/ base website address (without http:\/\/)$/;"	d
+TMP	../../../../../cygdrive/d/htdocs/a-frame/skeleton/includes/config.php	/^	define('TMP', DATA . '\/tmp');					\/\/ where application temporary files are stored$/;"	d
+USER_DEFINE	../../../../../cygdrive/d/htdocs/a-frame/skeleton/includes/local.default.php	/^	define('USER_DEFINE', 12345);$/;"	d
+VIEWS	../../../../../cygdrive/d/htdocs/a-frame/skeleton/includes/config.php	/^	define('VIEWS', BASE . '\/views');				\/\/ the root view folder$/;"	d
+WEBROOT	../../../../../cygdrive/d/htdocs/a-frame/skeleton/includes/local.default.php	/^	define('WEBROOT', '');						\/\/ if under a subdirectory...usually blank$/;"	d
+_delete	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		function _delete($condition, $limit = '')$/;"	f
+_escape	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function _escape($str)$/;"	f
+_get_msg	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base.php	/^		function &_get_msg()$/;"	f
+_get_self	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function _get_self()$/;"	f
+_init	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base.php	/^		function _init(&$event)$/;"	f
+_init	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^		function _init(&$event)$/;"	f
+_init	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		function _init(&$event)$/;"	f
+_post	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		function _post()$/;"	f
+_query	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function _query($query, $multi = false)$/;"	f
+_template	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function _template($label, $input, $class = '')$/;"	f
+action	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^				$this->action		=	$event->get('_action');$/;"	v
+action	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^		var $action;$/;"	v
+action	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^						$this->action		=	$route['action'];$/;"	v
+action	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^					$this->action		=	$args[1];$/;"	v
+action	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^					$this->action		=	$route['route']['action'];$/;"	v
+action	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^				$this->action		=	$argv[1];$/;"	v
+action	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^			$this->action		=	'index';$/;"	v
+action	../../../../../cygdrive/d/htdocs/a-frame/skeleton/views/errors/missing_action.php	/^	$action		=	$this->event->get('_action');$/;"	v
+action_name	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^			$action_name		=	preg_replace('\/[^a-z0-9\\_]\/i', '_', $this->action);$/;"	v
+actually	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^			\/\/ check to make sure our class actually exists$/;"	c
+add	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^		function add($key, $type, $required, $msg, $length)$/;"	f
+add	../../../../../cygdrive/d/htdocs/a-frame/core/classes/msg.php	/^		function add($msg, $type = MSG_ERROR)$/;"	f
+addServer	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^        function addServer($host, $port = 11211, $persist = true, $weight = 10)$/;"	f
+add_query	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function add_query($query, $params = array(), $rawlit = false)$/;"	f
+add_val	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		function add_val($key, $type, $required, $msg, $length = -1)$/;"	f
+advanced	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^		function advanced($type, $data, $value, $required = true)$/;"	f
+all	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function all($query, $params = array(), $rawlit = false, $multi = false)$/;"	f
+allows	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		 * This function allows adding queries to a batch to be executed all at once. Note that this$/;"	f
+already	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^			\/\/ check if our class already exists (cross your fingers). hopefully the helper functions did their $/;"	c
+also	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^	 * This class also contains provisions to deal with Memcache's namespacing issues, or at least$/;"	c
+an	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^		 * Pass this function an array of data with keys corresponding to the keys set by$/;"	f
+app_base	../../../../../cygdrive/d/htdocs/a-frame/skeleton/index.php	/^	$app_base	=	dirname(__FILE__);$/;"	v
+app_controller	../../../../../cygdrive/d/htdocs/a-frame/skeleton/controllers/app_controller.php	/^	class app_controller extends base_controller$/;"	c
+app_error	../../../../../cygdrive/d/htdocs/a-frame/skeleton/controllers/error_handler.php	/^		function app_error($errno, $errstr, $errfile, $errline)$/;"	f
+app_model	../../../../../cygdrive/d/htdocs/a-frame/skeleton/models/app_model.php	/^		function app_model(&$event)$/;"	f
+app_model	../../../../../cygdrive/d/htdocs/a-frame/skeleton/models/app_model.php	/^	class app_model extends base_model$/;"	c
+arg_count	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^			$arg_count		=	count($args);$/;"	v
+arg_count	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^			$arg_count	=	count($args);$/;"	v
+args	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^				$this->args			=	$event->get('_arguments');$/;"	v
+args	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^		var $args;$/;"	v
+args	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^					$args	=	$this->build_args($params);$/;"	v
+args	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^			$args	=	'';$/;"	v
+args	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^			$args	=	substr($args, 1);$/;"	v
+args	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^				$args	=	array();$/;"	v
+args	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^			$args	=	explode('\/', $url);$/;"	v
+argv	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^				$argv	=	$GLOBALS['_argv'];		\/\/ pull from argv we stored during bootup (index.php)$/;"	v
+assign	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^		function assign($key, $value)$/;"	f
+assign_by_ref	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^		function assign_by_ref($key, &$value)$/;"	f
+attributes	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		 * under that directory. Sets the appropriate class attributes and calls event::load_object()$/;"	c
+attributes	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		 * under that directory. Sets the appropriate class attributes and calls event::load_object().$/;"	c
+automatically	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^	 * The class automatically detects which to use, or can be specified by user.$/;"	c
+base	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base.php	/^		function base(&$event)$/;"	f
+base	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base.php	/^	class base$/;"	c
+base_controller	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^	class base_controller extends base$/;"	c
+base_model	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^	class base_model extends base$/;"	c
+batch_queue	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$this->batch_queue	=	array();$/;"	v
+batch_queue	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		private $batch_queue		=	array();$/;"	v
+build_args	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		private function build_args($params)$/;"	f
+cache	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base.php	/^				$this->cache		=	&$event->return_object('cache');$/;"	v
+cache	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base.php	/^		var $cache;$/;"	v
+cache	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^				$this->cache		=	new Memcache;$/;"	v
+cache	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^		function cache($options)$/;"	f
+cache	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^		var $cache;$/;"	v
+cache	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^	class cache$/;"	c
+cache	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^			$cache	=	&$this->event->object('cache');$/;"	v
+cache	../../../../../cygdrive/d/htdocs/a-frame/core/includes/config.php	/^	$cache		=	&$event->object('classes\/cache', array($config['cache']['options']));			\/\/ our application's cache...a must have!$/;"	v
+cache_type	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^				$this->cache_type	=	CACHE_APC;$/;"	v
+cache_type	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^				$this->cache_type	=	CACHE_MEMCACHE;$/;"	v
+cache_type	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^		var $cache_type	=	CACHE_MEMCACHE;$/;"	v
+call	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^		 * Placeholder, called by run::parse() after main function call.$/;"	f
+catch_all	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^		var $catch_all	=	null;$/;"	v
+charset	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$this->charset		=	isset($params['charset']) ? $params['charset'] : null;$/;"	v
+charset	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public $charset	=	null;$/;"	v
+check	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^			$check	=	$this->db->one($qry, $params);$/;"	v
+check	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^		function check($data, $clear_inputs = true)$/;"	f
+check_bool	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^		function check_bool($value, $required = false)$/;"	f
+check_date	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^		function check_date($value, $required = false, $length = '')$/;"	f
+check_email	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^		function check_email($value, $required = false)$/;"	f
+check_float	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^		function check_float($value, $required = false)$/;"	f
+check_int	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^		function check_int($value, $required = false)$/;"	f
+check_string	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^		function check_string($value, $required = false, $length = -1)$/;"	f
+checkbox	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function checkbox($name, $check_value, $item_value, $label, $read_only = false, $note = '')$/;"	f
+checked	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^				$checked	=	'checked="checked"';$/;"	v
+checked	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$checked	=	'';$/;"	v
+ckey	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^			$ckey	=	'routes:controller:routes';$/;"	v
+class	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^				$class	=	preg_replace('\/^.*\\\/\/', '', $class);$/;"	v
+class	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function _template($label, $input, $class = '')$/;"	v
+class	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^					$class		=	trim($matches[1]);$/;"	v
+cleanup	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^		public function cleanup()$/;"	f
+clear	../../../../../cygdrive/d/htdocs/a-frame/core/classes/msg.php	/^		function clear()$/;"	f
+clear_inputs	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^		function check($data, $clear_inputs = true)$/;"	v
+clear_lock	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		private function clear_lock()$/;"	f
+close	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^		function close()$/;"	f
+codes	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^			$codes = array($/;"	v
+color	../../../../../cygdrive/d/htdocs/a-frame/core/classes/msg.php	/^						$color	=	'';$/;"	v
+color	../../../../../cygdrive/d/htdocs/a-frame/core/classes/msg.php	/^						$color	=	'class="error"';$/;"	v
+color	../../../../../cygdrive/d/htdocs/a-frame/core/classes/msg.php	/^						$color	=	'class="success"';$/;"	v
+commit	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function commit()$/;"	f
+compression	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^				$this->compression	=	$options['compression'];$/;"	v
+compression	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^		var $compression	=	0;$/;"	v
+con	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^						$con	=	$this->addServer($host, $port, $persist, $weight);$/;"	v
+config	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base.php	/^				$this->config		=	&$event->get_ref('config');$/;"	v
+config	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base.php	/^		var $config;$/;"	v
+connect	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function connect()$/;"	f
+connected	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$this->connected	=	false;$/;"	v
+connected	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$this->connected	=	true;$/;"	v
+connected	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		private $connected			=	false;$/;"	v
+connection_lock	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$this->connection_lock	=	false;$/;"	v
+connection_lock	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$this->connection_lock	=	true;$/;"	v
+connection_lock	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		private $connection_lock	=	false;$/;"	v
+connections	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$this->connections	=	array();$/;"	v
+connections	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		private $connections;$/;"	v
+construct	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^		function get_status_header($code, $construct = true)$/;"	v
+content	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^			$content	=	$this->template->fetch($view);$/;"	v
+content	../../../../../cygdrive/d/htdocs/a-frame/core/classes/error.php	/^			$content	=	$this->template->fetch($tpl, false);$/;"	v
+content	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^				$content	=	$template->get_template_vars('main_content');$/;"	v
+content	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^				$content	=	$template->show_layout();$/;"	v
+content	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^			$content	=	ob_get_contents();$/;"	v
+content	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^			$content	=	$this->fetch($file);$/;"	v
+controller	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^				$this->controller	=	$event->get('_controller');$/;"	v
+controller	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^		var $controller;$/;"	v
+controller	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^					$controller	=	$class;$/;"	v
+controller	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		public function &controller($class, $params = array(), $overwrite = false, $run_init = true)$/;"	f
+controller	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^						$this->controller	=	$route['controller'];$/;"	v
+controller	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^					$this->controller	=	$args[0];$/;"	v
+controller	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^					$this->controller	=	$route['route']['controller'];$/;"	v
+controller	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^				$this->controller	=	CRON_CONTROLLER;$/;"	v
+controller	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^			$this->controller	=	'main';$/;"	v
+controller	../../../../../cygdrive/d/htdocs/a-frame/skeleton/views/errors/missing_action.php	/^	$controller	=	$this->event->get('_controller');$/;"	v
+controller	../../../../../cygdrive/d/htdocs/a-frame/skeleton/views/errors/missing_controller.php	/^	$controller	=	$this->event->get('_controller');$/;"	v
+controller_name	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^			$controller_name	=	preg_replace('\/[^a-z0-9\\_]\/i', '_', $this->controller);$/;"	v
+conveniently	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^	 * This cache class conveniently wraps around the following:$/;"	c
+core_base	../../../../../cygdrive/d/htdocs/a-frame/skeleton/index.php	/^	$core_base	=	$app_base . '\/..\/A-Frame';$/;"	v
+could	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^		 * This function could be split up into 300 different classes, but the beauty of$/;"	f
+cron	../../../../../cygdrive/d/htdocs/a-frame/skeleton/controllers/cron.php	/^	class cron extends app_controller$/;"	c
+d	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^				$d		=	dir(CONTROLLERS);$/;"	v
+data	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^					$data	=	$this->fetch_row($res, MSSQL_ASSOC);$/;"	v
+data	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^					$data	=	$this->fetch_row($res, MYSQLI_ASSOC);$/;"	v
+data	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^					$data	=	$this->fetch_row($res, MYSQL_ASSOC);$/;"	v
+data	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^				$data	=	$row[0];$/;"	v
+data	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^				$data	=	$this->gather_multi_results($res);$/;"	v
+data	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^				$data	=	mssql_fetch_array($res, $fetch_mode);$/;"	v
+data	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^				$data	=	mssql_num_rows($res);$/;"	v
+data	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^				$data	=	mysql_fetch_array($res, $fetch_mode);$/;"	v
+data	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^				$data	=	mysql_num_rows($res);$/;"	v
+data	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^				$data	=	mysqli_fetch_array($res, $fetch_mode);$/;"	v
+data	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^				$data	=	mysqli_num_rows($res);$/;"	v
+data	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$data	=	$this->gather_multi_results($res);$/;"	v
+data	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$data	=	'';$/;"	v
+data	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$data	=	array();$/;"	v
+data	../../../../../cygdrive/d/htdocs/a-frame/core/classes/error.php	/^		function err($type, $data = array())$/;"	v
+data	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^			$this->data			=	array();$/;"	v
+data	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^		var $data;$/;"	v
+data	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^				$data	=	$tmp;$/;"	v
+date	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^				$date	=	$date[1];$/;"	v
+date	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$date		=	strtotime(str_replace('-', '\/', $value));$/;"	v
+date	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$date	=	array();$/;"	v
+db	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^				$this->db	=	&$event->object('db');$/;"	v
+db	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		var $db;$/;"	v
+db	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		function db($params)$/;"	f
+db	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^	class db$/;"	c
+db	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^				$db	=	&$this->event->object('db');$/;"	v
+db	../../../../../cygdrive/d/htdocs/a-frame/core/includes/config.php	/^		$db		=	&$event->object('db', array($config['db']['dsn']));$/;"	v
+dbc	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^					$dbc	=	mssql_connect($host, $username, $password);$/;"	v
+dbc	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^					$dbc	=	mssql_pconnect($host, $username, $password);$/;"	v
+dbc	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^					$dbc	=	mysql_connect($host, $username, $password);$/;"	v
+dbc	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^					$dbc	=	mysql_pconnect($host, $username, $password);$/;"	v
+dbc	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^					$dbc	=	mysqli_connect($host, $username, $password, $database, $port, $socket);$/;"	v
+dbc	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^					$dbc	=	mysqli_connect($host, $username, $password, $database, 3306, $socket);$/;"	v
+dbc	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^				$this->dbc				=	&$this->connections[0];$/;"	v
+dbc	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^				$this->dbc	=	&$this->connections[0];$/;"	v
+dbc	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^				$this->dbc	=	&$this->connections[1];$/;"	v
+dbc	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$this->dbc	=	&$this->connections[0];$/;"	v
+dbc	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public $dbc;$/;"	v
+decrement	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^		function decrement($key)$/;"	f
+default	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^			$default	=	$default === '' ? $this->get_default : $default;$/;"	v
+default	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		public function &get_ref($key, $default = '')$/;"	v
+default	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		public function get($key, $default = '')$/;"	v
+del_ns	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^		function del_ns($name)$/;"	f
+delete	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		function delete($id, $limit = '')$/;"	f
+delete	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^		function delete($key)$/;"	f
+determine_query_server	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function determine_query_server($prepared_query)$/;"	f
+diff	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^					$diff	=	0 - $i;$/;"	v
+directly	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^		 * Will create a route such that when \/events\/6 is visited, the function directly below$/;"	f
+directory	../../../../../cygdrive/d/htdocs/a-frame/core/includes/config.php	/^	 * aframe includes define (directory config lives)$/;"	d
+disabled	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$disabled	=	($read_only ? 'disabled="true"' : '');$/;"	v
+disconnect	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function disconnect()$/;"	f
+disp_errs	../../../../../cygdrive/d/htdocs/a-frame/skeleton/controllers/error_handler.php	/^			$disp_errs	=	(bool)ini_get('display_errors');$/;"	v
+do_connect	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		private function do_connect($host, $username, $password, $database, $port = '', $persist = false)$/;"	f
+do_disconnect	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		private function do_disconnect(&$dbc)$/;"	f
+dob	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function dob($name, $value = '', $label = '', $read_only = false, $note = '')$/;"	f
+doesn	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^				\/\/ class doesn't exist, do all of our guessing.$/;"	c
+dump	../../../../../cygdrive/d/htdocs/a-frame/core/classes/msg.php	/^		function dump($dump_javascript=false, $js_var = 'msg')$/;"	f
+dump_queries	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function dump_queries($sep = '<br\/>')$/;"	f
+duplicate_check	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		function duplicate_check($item, $fields)$/;"	f
+erh	../../../../../cygdrive/d/htdocs/a-frame/core/classes/error.php	/^				$erh	=	&$this->event->object('error_handler', array(&$this->event));$/;"	v
+err	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		function err($msg, $field)$/;"	f
+err	../../../../../cygdrive/d/htdocs/a-frame/core/classes/error.php	/^		function err($type, $data = array())$/;"	f
+errlevel	../../../../../cygdrive/d/htdocs/a-frame/skeleton/controllers/error_handler.php	/^			$errlevel	=	ini_get('error_reporting');$/;"	v
+errno	../../../../../cygdrive/d/htdocs/a-frame/skeleton/controllers/error_handler.php	/^			else if(($errno == E_USER_NOTICE || $errno == E_NOTICE) && $errlevel != $errnotice)$/;"	v
+errno	../../../../../cygdrive/d/htdocs/a-frame/skeleton/controllers/error_handler.php	/^			else if(($errno == E_USER_WARNING || $errno == E_WARNING) && $errlevel != $errwarning)$/;"	v
+errno	../../../../../cygdrive/d/htdocs/a-frame/skeleton/controllers/error_handler.php	/^			if($errno == E_USER_ERROR || $errno == E_ERROR)$/;"	v
+errnotice	../../../../../cygdrive/d/htdocs/a-frame/skeleton/controllers/error_handler.php	/^			$errnotice	=	$errlevel & ~E_NOTICE;$/;"	v
+error	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^			$this->error	=	true;$/;"	v
+error	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		var $error	=	false;$/;"	v
+error	../../../../../cygdrive/d/htdocs/a-frame/core/classes/error.php	/^	class error extends base_controller$/;"	c
+error	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^					$error	=	false;$/;"	v
+error	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^			$error	=	true;$/;"	v
+error	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^			$error	=	&$event->object('error');$/;"	v
+error	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^						$error	=	&$this->event->object('error');$/;"	v
+error	../../../../../cygdrive/d/htdocs/a-frame/core/includes/config.php	/^	$error		=	&$event->object('classes\/error', array(&$event));								\/\/ probably wont need, but accidents happen$/;"	v
+error_handler	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^				$error_handler	=	&$this->event->controller('error_handler', array(&$this->event), false, false);$/;"	v
+error_handler	../../../../../cygdrive/d/htdocs/a-frame/skeleton/controllers/error_handler.php	/^	class error_handler extends app_controller$/;"	c
+error_level	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^				$error_level	=	ini_set("error_reporting", E_ERROR);$/;"	v
+errwarning	../../../../../cygdrive/d/htdocs/a-frame/skeleton/controllers/error_handler.php	/^			$errwarning	=	$errlevel & ~E_WARNING;$/;"	v
+escape	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function escape($str)$/;"	f
+escape_fields	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		var $escape_fields	=	true;$/;"	v
+eval	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^					$eval	=	'$GLOBALS[\\'_obj\\'][$class]	=	new '. $class .'('. $args .');';$/;"	v
+event	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base.php	/^				$this->event		=	&$event;$/;"	v
+event	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base.php	/^		var $event;$/;"	v
+event	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		public function event($data = null)$/;"	f
+event	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^	class event$/;"	c
+event	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^			$event	=	&$this->event;$/;"	v
+event	../../../../../cygdrive/d/htdocs/a-frame/core/includes/config.php	/^	$event	=	new event();				\/\/ start up our event object...stores GET\/POST info, and holds all other objects!$/;"	v
+execute	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function execute($query, $params = array(), $rawlit = false)$/;"	f
+fetch	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^		function fetch($template, $throw = true)$/;"	f
+fetch_mode	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^				$this->fetch_mode	=	MSSQL_ASSOC;$/;"	v
+fetch_mode	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^				$this->fetch_mode	=	MYSQLI_ASSOC;$/;"	v
+fetch_mode	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^				$this->fetch_mode	=	MYSQL_ASSOC;$/;"	v
+fetch_mode	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$fetch_mode	=	empty($fetch_mode) ? $this->fetch_mode : $fetch_mode;$/;"	v
+fetch_mode	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public $fetch_mode;$/;"	v
+fetch_mode	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function fetch_row(&$res, $fetch_mode = '')$/;"	v
+fetch_row	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function fetch_row(&$res, $fetch_mode = '')$/;"	f
+field	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^				$field	=	str_replace('`', '', $field);$/;"	v
+field	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^			foreach($data as $field => $value)$/;"	v
+field_note	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^					$this->field_note	=	"";$/;"	v
+field_note	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^					$this->field_note	=	"`";$/;"	v
+field_note	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		var $field_note;$/;"	v
+fields	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^				$fields	=	substr($fields, 0, -1) ." ";$/;"	v
+fields	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^				$fields	=	substr($fields, 0, -1);$/;"	v
+fields	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^			$fields	=	"";$/;"	v
+file	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^					$file	=	$this->template_dir . DIRECTORY_SEPARATOR . $template;$/;"	v
+file	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^					$file	=	preg_replace('\/^file:\/', '', $template);$/;"	v
+file	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^				$file		=	preg_replace('\/\\.php$\/', '', $file);$/;"	v
+file	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^			$file		=	'file:' . $this->layout_dir . DIRECTORY_SEPARATOR . $this->get_layout() .'.php';$/;"	v
+file	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function file($name, $value, $label, $read_only = false, $note = '', $size = 0, $maxLength = 1000, $params = array())$/;"	f
+filename	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^			$filename	=	$class;$/;"	v
+files	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^				$files	=	array();$/;"	v
+finish	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^		function finish()$/;"	f
+first	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^					$first		=	false;$/;"	v
+first	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$first	=	true;	$/;"	v
+flush	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^		function flush()$/;"	f
+folder	../../../../../cygdrive/d/htdocs/a-frame/core/includes/config.php	/^	 * aframe base define (folder a-frame lives)$/;"	d
+folder	../../../../../cygdrive/d/htdocs/a-frame/core/includes/config.php	/^	 * aframe classes define (folder that holds all the classes)$/;"	d
+for	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^	 * This file contains the main cache-abstraction class. It's purpose is to provide a common interface for$/;"	c
+for	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^	 * This file contains the main cache-abstraction class. It's purpose is to provide a common interface for$/;"	i
+for	../../../../../cygdrive/d/htdocs/a-frame/skeleton/controllers/cron.php	/^	 * Provides an interface for running cron jobs through the system.$/;"	c
+for	../../../../../cygdrive/d/htdocs/a-frame/skeleton/controllers/cron.php	/^	 * Provides an interface for running cron jobs through the system.$/;"	i
+for	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^	 * REST routes class. Very robust class for using regexes and HTTP methods for routing.$/;"	c
+form_errors	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^			$form_errors	=	$this->event->get('form_errors', array());$/;"	v
+free	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function free($res)$/;"	f
+free_res	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$this->free_res		=	isset($params['free_res']) ? $params['free_res'] : false;$/;"	v
+free_res	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public $free_res	=	false;$/;"	v
+function	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^						$function	=	trim(preg_replace('\/.*function[\\s\\r\\n]+([\\w]+).*\/is', '$1', $route));$/;"	v
+functions	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		function run_insert($data, $functions = array())$/;"	v
+functions	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		function run_update($id, $data, $functions = array())$/;"	v
+functions	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		function save($data, $functions = array(), $duplicate_check = array(), $update = false, $dup_false = false)$/;"	v
+gather_multi_results	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function gather_multi_results($res)$/;"	f
+get	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^		function get($key)$/;"	f
+get	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		public function get($key, $default = '')$/;"	f
+get_default	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		public $get_default	=	'';$/;"	v
+get_layout	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^		public function get_layout()$/;"	f
+get_ref	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		public function &get_ref($key, $default = '')$/;"	f
+get_remote_ip	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base.php	/^		function get_remote_ip($retarded = false)$/;"	f
+get_status_header	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^		function get_status_header($code, $construct = true)$/;"	f
+get_template_vars	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^		function &get_template_vars($key = null)$/;"	f
+get_url	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function get_url($exceptions = array(), $return_filename = false, $return_cap = false, $framework_url = true)$/;"	f
+get_var	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^		function get_var($key)$/;"	f
+get_var_ref	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^		function &get_var_ref($key)$/;"	f
+gpc	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^			$gpc	=	array_merge($_COOKIE, $_GET, $_POST);$/;"	v
+has_errors	../../../../../cygdrive/d/htdocs/a-frame/core/classes/msg.php	/^				$this->has_errors	=	true;$/;"	v
+has_errors	../../../../../cygdrive/d/htdocs/a-frame/core/classes/msg.php	/^			$this->has_errors	=	false;$/;"	v
+has_errors	../../../../../cygdrive/d/htdocs/a-frame/core/classes/msg.php	/^		var $has_errors		=	false;$/;"	v
+have_https	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^					$have_https	=	true;$/;"	v
+have_https	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^			$have_https	=	false;$/;"	v
+header	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^				$header	=	'HTTP\/1.1 ' . $code . ' ' . $header;$/;"	v
+header	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^			$header	=	isset($codes[$code]) ? $codes[$code] : '';$/;"	v
+home	../../../../../cygdrive/d/htdocs/a-frame/skeleton/controllers/pages.php	/^		function home()$/;"	f
+host	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^						$host		=	$options['servers'][$i][0];$/;"	v
+host	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^					$host	=	'localhost';$/;"	v
+host	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^				$host	=	!empty($port) && $port != 3306 ? $host .':'. $port : $host;$/;"	v
+host	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^				$host	=	isset($port) && $port != 1433 ? $host .':'. $port : $host;$/;"	v
+https	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^			$https	=	$this->event->get('https', array());$/;"	v
+https	../../../../../cygdrive/d/htdocs/a-frame/core/includes/config.php	/^	$https	=	array();$/;"	v
+https_keys	../../../../../cygdrive/d/htdocs/a-frame/skeleton/includes/https.php	/^	$https_keys	=	array('HTTPS');$/;"	v
+i	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^					$i	=	$i - ($i_end - $pages);$/;"	v
+i	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^					$i	=	1;$/;"	v
+i	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^				$i	=	$page_number - (int)($max_pages \/ 2);$/;"	v
+i	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^				$i	=	1;$/;"	v
+i_end	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^					$i_end	=	$pages;$/;"	v
+i_end	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^				$i_end	=	$i + $max_pages - 1;$/;"	v
+i_end	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^				$i_end	=	$i + $max_pages;$/;"	v
+id	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^				$id			=	$data[$this->id_key];$/;"	v
+id	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^				$id			=	(int)$results[0][0]['id'];$/;"	v
+id	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^				$id	=	"'". $this->db->escape($id) ."'";$/;"	v
+id	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^				$id	=	$this->last_id();$/;"	v
+id	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^				$id	=	$this->run_insert($data, $functions);$/;"	v
+id	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$id			=	$this->strict_validation ? preg_replace('\/\\_$\/', '', preg_replace('\/[\\[\\]]+\/', '_', $id)) : $id;$/;"	v
+id	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$id			=	$this->strict_validation ? preg_replace('\/\\_$\/', '', preg_replace('\/[\\[\\]]+\/', '_', $name)) : $name;$/;"	v
+id	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$id		=	$strict_validation ? preg_replace('\/\\_$\/', '', preg_replace('\/[\\[\\]]+\/', '_', $for)) : $for;$/;"	v
+id	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$id		=	$this->strict_validation ? preg_replace('\/\\_$\/', '', preg_replace('\/[\\[\\]]+\/', '_', $name . '[d]')) : $name;$/;"	v
+id	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$id		=	$this->strict_validation ? preg_replace('\/\\_$\/', '', preg_replace('\/[\\[\\]]+\/', '_', $name . '[m]')) : $name;$/;"	v
+id	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$id		=	$this->strict_validation ? preg_replace('\/\\_$\/', '', preg_replace('\/[\\[\\]]+\/', '_', $name . '[y]')) : $name;$/;"	v
+id	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$id		=	$this->strict_validation ? preg_replace('\/\\_$\/', '', preg_replace('\/[\\[\\]]+\/', '_', $name)) : $name;$/;"	v
+id_key	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		var $id_key	=	'id';$/;"	v
+idx	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$idx	=	count($this->batch_queue) - 1;$/;"	v
+image	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function image($src, $value = '', $params = '')$/;"	f
+in	../../../../../cygdrive/d/htdocs/a-frame/core/classes/error.php	/^	 * loads an optional class in the apps CONTROLLERS folder which can be used to do any app-specific$/;"	c
+in	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^				\/\/ can be run in the 'error_handler' class in the app's \/controllers directory$/;"	c
+in	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^	 * Main framework class in charge of processing requests, loading controller classes,$/;"	c
+in_transaction	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$this->in_transaction	=	false;$/;"	v
+in_transaction	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$this->in_transaction	=	true;$/;"	v
+in_transaction	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		private $in_transaction		=	false;$/;"	v
+increment	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^		function increment($key)$/;"	f
+init	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base.php	/^		function init()$/;"	f
+init	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^		function init()$/;"	f
+init	../../../../../cygdrive/d/htdocs/a-frame/skeleton/controllers/app_controller.php	/^		function init()$/;"	f
+init	../../../../../cygdrive/d/htdocs/a-frame/skeleton/controllers/cron.php	/^		function init()$/;"	f
+inp	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^			$this->inp	=	&$event->object('input_validation', array(&$event));$/;"	v
+inp	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		var $inp;$/;"	v
+input	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$input		=	'$/;"	v
+input	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$input	=	'$/;"	v
+input	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$input	=	'<select name="'. $name. '[m]" id="'. $id .'">';$/;"	v
+input_validation	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^	class input_validation extends base$/;"	c
+inputs	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^				$this->inputs	=	array();$/;"	v
+inputs	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^		public $inputs	=	array();$/;"	v
+inrange	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^					$inrange	=	false;$/;"	v
+inrange	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^			$inrange	=	true;$/;"	v
+is	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^	 * The base_controller class is extended (hopefully) by all controllers.$/;"	c
+is	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		 * This function is clean, simple, and superior. In fact, view_helper::paginate() may be destroyed soon...$/;"	f
+is	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		 * pagination format. This function is prefered over the above as it replaces [page] with the page number in the URL:$/;"	f
+is	../../../../../cygdrive/d/htdocs/a-frame/skeleton/controllers/app_controller.php	/^		 * This function is called on every controller start, and can be used for any app-specific$/;"	f
+is	../../../../../cygdrive/d/htdocs/a-frame/skeleton/controllers/error_handler.php	/^	 * This class is loaded and called whenever an application error occurs. It has the ability to change the error type (and thus the loaded$/;"	c
+is_locked	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		private function is_locked()$/;"	f
+js_var	../../../../../cygdrive/d/htdocs/a-frame/core/classes/msg.php	/^		function dump($dump_javascript=false, $js_var = 'msg')$/;"	v
+k	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			for($i = 0, $k = array_keys($params), $n = count($params); $i < $n; $i++)$/;"	v
+kdata	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$kdata	=	isset($data[0]['display_name']) ? 'display_name' : 'name';$/;"	v
+key	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^			$key	=	$this->key_prefix . $key;$/;"	v
+key	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^			$key	=	'namespace:'. $name;$/;"	v
+key	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^				$key	=	$t[$i];$/;"	v
+key	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^			foreach($this->inputs as $key => $cur)$/;"	v
+key_prefix	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^			$this->key_prefix	=	isset($options['key_prefix']) ? $options['key_prefix'] : '';$/;"	v
+key_prefix	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^		var $key_prefix;$/;"	v
+keys	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^			$keys		=	$this->event->get('https_keys', array('HTTPS'));$/;"	v
+keys	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^				$keys	=	array_keys($data);$/;"	v
+kvalue	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$kvalue	=	'id';$/;"	v
+label	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$label		=	view_helper::label($label, $id, $note);$/;"	v
+label	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$label		=	view_helper::label($label, $name, $note);$/;"	v
+label	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$label	=	view_helper::label($label, $name, $note);$/;"	v
+label	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function label($label, $for, $note = '', $strict_validation = false)$/;"	f
+last_id	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^					$this->last_id		=	"@@IDENTITY";$/;"	v
+last_id	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^					$this->last_id		=	"last_insert_id()";$/;"	v
+last_id	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		function last_id($run_query = true)$/;"	f
+last_id_qry	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^				$last_id_qry	=	$this->last_id(false);$/;"	v
+last_query	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function last_query()$/;"	f
+layout	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^			if($layout === null || $layout === false)$/;"	v
+layout	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^		function layout($layout)$/;"	f
+layout	../../../../../cygdrive/d/htdocs/a-frame/core/classes/error.php	/^				$layout	=	$this->template->fetch('layouts\/'. $this->template->layout, false);$/;"	v
+layout	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^			$this->layout	=	$layout;$/;"	v
+layout	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^		var $layout;$/;"	v
+layout_dir	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^			$this->layout_dir	=	empty($layout_dir) ? APPPATH . 'views\/layouts' : $layout_dir;$/;"	v
+layout_dir	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^		var $layout_dir;$/;"	v
+lbase	../../../../../cygdrive/d/htdocs/a-frame/skeleton/webroot/index.php	/^	$lbase	=	dirname(dirname(__FILE__));$/;"	v
+len	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$len	=	count($data);$/;"	v
+length	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		function add_val($key, $type, $required, $msg, $length = -1)$/;"	v
+length	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^				$length	=	explode('-', $length);$/;"	v
+library	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		public function &library($class, $params = array(), $overwrite = false, $run_init = true)$/;"	f
+limit	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		function _delete($condition, $limit = '')$/;"	v
+limit	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		function delete($id, $limit = '')$/;"	v
+load_object	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		private function &load_object($class, $params, $run_init, $type = '')$/;"	f
+load_routes	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^		function load_routes()$/;"	f
+loading	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		 * The brains behind event's object loading. Used by the other class loading functions to do the heavy$/;"	c
+loading	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		 * Used mainly by event::load_object() to build eval strings for class loading.$/;"	c
+loading	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		 * lifting of the class loading.$/;"	c
+matches	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^					$matches	=	$matches[1];$/;"	v
+matches	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^					$matches	=	array();$/;"	v
+matches	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^				$matches	=	array();$/;"	v
+media	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^						$media		=	array();$/;"	v
+media	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^						$media		=	isset($media[1]) ? eval('return defined("' . $media[1].'") ? '. $media[1] .' : null;') : null;$/;"	v
+mem_s	../../../../../cygdrive/d/htdocs/a-frame/index.php	/^	$mem_s	=	memory_get_usage(true);$/;"	v
+message	../../../../../cygdrive/d/htdocs/a-frame/core/classes/msg.php	/^					$message = explode('|', $this->messages[$i]['msg']);$/;"	v
+messages	../../../../../cygdrive/d/htdocs/a-frame/core/classes/msg.php	/^			$this->messages		=	array();$/;"	v
+messages	../../../../../cygdrive/d/htdocs/a-frame/core/classes/msg.php	/^		var $messages		=	array();$/;"	v
+method	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^							$method	=	strtolower($matches[1][$i]);$/;"	v
+microtime_float	../../../../../cygdrive/d/htdocs/a-frame/index.php	/^	function microtime_float()$/;"	f
+mirrors	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^	\/\/ Cache-specific defines. The file_cache class mirrors the PHP memcache's implementation closely enough $/;"	c
+mode	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$this->mode			=	isset($params['mode']) ? $params['mode'] : AFRAME_DB_MODE_MYSQL;$/;"	v
+mode	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public $mode	=	AFRAME_DB_MODE_MYSQL;$/;"	v
+model	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^				$this->model	=	&$this->event->model($this->controller, array(&$this->event));$/;"	v
+model	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^		var $model;$/;"	v
+model	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		public function &model($class, $params = array(), $overwrite = false, $run_init = true)$/;"	f
+mport	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^				$mport	=	isset($this->params['master']['port']) ? $this->params['master']['port'] : '';$/;"	v
+msg	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^			$msg	=	&$this->_get_msg();$/;"	v
+msg	../../../../../cygdrive/d/htdocs/a-frame/core/classes/msg.php	/^		function msg()$/;"	f
+msg	../../../../../cygdrive/d/htdocs/a-frame/core/classes/msg.php	/^	class msg$/;"	c
+multi	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function _query($query, $multi = false)$/;"	v
+multi_query	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function multi_query($query, $params = array(), $rawlit = false)$/;"	f
+multiquery	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$multiquery	=	implode(";\\n", $queries) . ";";$/;"	v
+n	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^			for($i = 0, $n = count($fields); $i < $n; $i++)$/;"	v
+n	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^					for($i = 0, $n = count($options['servers']); $i < $n; $i++)$/;"	v
+n	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^			for($i = 0, $n = count($params); $i < $n; $i++)$/;"	v
+n	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^			for($i = 0, $n = count($t); $i < $n; $i++)$/;"	v
+n	../../../../../cygdrive/d/htdocs/a-frame/core/classes/msg.php	/^				for($i = 0, $n = $this->num_messages; $i < $n; $i++)$/;"	v
+n	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^						$n	=	1;$/;"	v
+n	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^						if($no_page_1 && $n == 1)$/;"	v
+n	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^					$n	=	$page_number - $max_pages;$/;"	v
+n	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^					$n	=	$pages;$/;"	v
+n	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^				$n	=	$page_number + $max_pages;$/;"	v
+n	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^				for($i = 0, $n = count($data); $i < $n; $i++)$/;"	v
+n	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^				for($i = 0, $n = count($exceptions); $i < $n; $i++)$/;"	v
+n	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^						for($i = 0, $n = count($matches[1]); $i < $n; $i++)$/;"	v
+name	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^			$name	=	$prefix . $tbl_name;$/;"	v
+name	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^				\/\/ if we have a class name prefix, load it.$/;"	c
+name	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^			\/\/ chairs.php, but the actual class name is 'chairs_model'. We ahve to keep this in mind when$/;"	c
+name	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^						\/\/ get the function name from the route$/;"	f
+name	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^					\/\/ get the class name (used for the 'controller' key later)$/;"	c
+note	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function label($label, $for, $note = '', $strict_validation = false)$/;"	v
+now_func	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^					$this->now_func		=	"GetDate()";$/;"	v
+now_func	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^					$this->now_func		=	"NOW()";$/;"	v
+now_func	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		var $now_func;$/;"	v
+ns	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^		function ns($name)$/;"	f
+num_fields	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function num_fields(&$res)$/;"	f
+num_messages	../../../../../cygdrive/d/htdocs/a-frame/core/classes/msg.php	/^			$this->num_messages	=	0;$/;"	v
+num_messages	../../../../../cygdrive/d/htdocs/a-frame/core/classes/msg.php	/^		var $num_messages	=	0;$/;"	v
+num_rows	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function num_rows(&$res)$/;"	f
+object	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		public function &object($class, $params = array(), $overwrite = false, $run_init = true)$/;"	f
+of	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		 * @param bool $run_init	Run the init() function of the object after instantiating? And yes, we  $/;"	f
+old_file	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^				$old_file	=	$file;		\/\/ Just in case there's a view error, we want to keep an accurate filename$/;"	v
+on	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		 * you have a field 'pass' and you need to run the PASSWORD() function on it, pass $/;"	f
+one	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function one($query, $params = array(), $rawlit = false)$/;"	f
+output	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^				$output	=	ob_get_contents();$/;"	v
+output	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$output = '';$/;"	v
+p	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			for($i = 0, $p = 0, $n = strlen($query); $i < $n; $i++)$/;"	v
+page_number	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^				$page_number	=	1;$/;"	v
+page_number	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			if( $page_number == '')$/;"	v
+pages	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$pages	=	ceil($total_items \/ $items_per_page);$/;"	v
+pages	../../../../../cygdrive/d/htdocs/a-frame/skeleton/controllers/pages.php	/^	class pages extends app_controller$/;"	c
+pagestring	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$pagestring	=	'';$/;"	v
+paginate	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function paginate($page_num, $url_string, $num_pages, $record_count, $items_pp, $show_prevnext = true, $page_var, $i_am_a_sex_machine = true)$/;"	f
+paginate_ajax	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function paginate_ajax($url, $page_number, $items_per_page, $total_items, $max_pages, $prevnext = true, $showjumps = true, $no_page_1 = false)$/;"	f
+params	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^			$params	=	array();$/;"	v
+params	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^				$params	=	array($params);$/;"	v
+params	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$this->params		=	$params;$/;"	v
+params	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		 * $params = ('asdf', 13)$/;"	v
+params	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		 * $params = array(10)$/;"	v
+params	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		private $params;$/;"	v
+params	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function add_query($query, $params = array(), $rawlit = false)$/;"	v
+params	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function all($query, $params = array(), $rawlit = false, $multi = false)$/;"	v
+params	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function execute($query, $params = array(), $rawlit = false)$/;"	v
+params	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function multi_query($query, $params = array(), $rawlit = false)$/;"	v
+params	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function one($query, $params = array(), $rawlit = false)$/;"	v
+params	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function query($query, $params = array(), $rawlit = false)$/;"	v
+params	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function row($query, $params = array(), $rawlit = false)$/;"	v
+params	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		public function &controller($class, $params = array(), $overwrite = false, $run_init = true)$/;"	v
+params	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		public function &library($class, $params = array(), $overwrite = false, $run_init = true)$/;"	v
+params	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		public function &model($class, $params = array(), $overwrite = false, $run_init = true)$/;"	v
+params	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		public function &object($class, $params = array(), $overwrite = false, $run_init = true)$/;"	v
+params	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^						$this->params		=	array_slice($args, $route_arg_count);$/;"	v
+params	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^					$this->params		=	$route['params'];$/;"	v
+params	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^					$this->params		=	array_slice($args, 2);$/;"	v
+params	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^				$this->params		=	array_slice($argv, 2);$/;"	v
+params	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^			$this->params		=	array();$/;"	v
+parse	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^		public function parse()$/;"	f
+password	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function password($name, $value = '', $label = '', $read_only = false, $note = '', $size = 0, $maxLength = 1000)$/;"	f
+pattern	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^				$pattern	=	str_replace('\/', '\\\/', $pattern);$/;"	v
+pattern	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^			foreach($routes as $pattern => $route)$/;"	v
+pcount	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^				$pcount	=	count($params);$/;"	v
+persist	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^						$persist	=	isset($options['servers'][$i][2]) ? $options['servers'][$i][2] : true;$/;"	v
+persist	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$persist	=	isset($this->params['persist']) ? $this->params['persist'] : false;$/;"	v
+populate	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		public function populate()$/;"	f
+port	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^						$port		=	isset($options['servers'][$i][1]) ? $options['servers'][$i][1] : 11211;$/;"	v
+port	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^        function addServer($host, $port = 11211, $persist = true, $weight = 10)$/;"	v
+port	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$port		=	isset($this->params['port']) ? $this->params['port'] : '';$/;"	v
+port	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		private function do_connect($host, $username, $password, $database, $port = '', $persist = false)$/;"	v
+post	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^		function post()$/;"	f
+prefix	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^			$prefix	=	$this->config['db']['prefix'];$/;"	v
+prefix	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^				$prefix	=	preg_replace('\/(^.*?)\\\/.*$\/', '$1', $class);$/;"	v
+prepare	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function prepare($query, $params, $rawlit = false)$/;"	f
+prepared	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$prepared	=	$this->prepare($query, $params, $rawlit);$/;"	v
+prevnext	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function paginate_ajax($url, $page_number, $items_per_page, $total_items, $max_pages, $prevnext = true, $showjumps = true, $no_page_1 = false)$/;"	v
+qry	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^			$qry	=	"$/;"	v
+qry	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^			$qry	=	"DELETE FROM ". $this->table ." WHERE ". $condition ." " . $limit;$/;"	v
+qry	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^				$qry	=	"begin transaction";$/;"	v
+qry	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^				$qry	=	"commit transaction";$/;"	v
+qry	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^				$qry	=	"commit";$/;"	v
+qry	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^				$qry	=	"rollback transaction";$/;"	v
+qry	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^				$qry	=	"rollback";$/;"	v
+qry	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^				$qry	=	"start transaction";$/;"	v
+qry	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$qry	=	'';$/;"	v
+qry_test	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$qry_test	=	substr(preg_replace('\/[\\r\\n \\t]+\/is', ' ', $prepared_query), 0, 16);$/;"	v
+queries	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$queries	=	array();$/;"	v
+queries	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$queries	=	implode($sep, $this->queries);$/;"	v
+queries	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$this->queries		=	array();$/;"	v
+queries	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public $queries;$/;"	v
+query	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$query	=	$this->prepare($query, $params, $rawlit);$/;"	v
+query	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function query($query, $params = array(), $rawlit = false)$/;"	f
+radio	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function radio($name, $id, $radio_value, $item_value, $label, $read_only = false, $note = '')$/;"	f
+rawlit	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function prepare($query, $params, $rawlit = false)$/;"	v
+read_only	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function checkbox($name, $check_value, $item_value, $label, $read_only = false, $note = '')$/;"	v
+read_only	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function file($name, $value, $label, $read_only = false, $note = '', $size = 0, $maxLength = 1000, $params = array())$/;"	v
+read_only	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function radio($name, $id, $radio_value, $item_value, $label, $read_only = false, $note = '')$/;"	v
+read_only	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function select($name, $data, $value, $label, $read_only = false, $onchange, $note = '')$/;"	v
+redir	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^				$redir	=	'http:\/\/'. SITE . $_SERVER['REQUEST_URI'];$/;"	v
+redirect	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^		function redirect($url, $type = '')$/;"	f
+regex	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^					$regex	=	'\/&?'.$exceptions[$i].'(=.*?(&|$))?\/i';$/;"	v
+regex	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^							$regex	=	$matches[2][$i];$/;"	v
+regex	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^				$regex		=	'\/^'. $pattern .'$\/';$/;"	v
+render	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^		function render($view)$/;"	f
+rep	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^					$rep	=	'$2';$/;"	v
+replication	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$this->replication	=	isset($params['replication']) ? $params['replication'] : false;$/;"	v
+replication	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		private $replication		=	false;$/;"	v
+request_method	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^				$request_method	=	$_SERVER['REQUEST_METHOD'];$/;"	v
+request_method	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^				$request_method	=	'GET';$/;"	v
+request_method	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^			$request_method	=	strtolower($request_method);$/;"	v
+required	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^				'required'	=>	($required === true || $required === 1) ? true : false,$/;"	v
+required	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^		function advanced($type, $data, $value, $required = true)$/;"	v
+required	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^		function check_bool($value, $required = false)$/;"	v
+required	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^		function check_date($value, $required = false, $length = '')$/;"	v
+required	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^		function check_email($value, $required = false)$/;"	v
+required	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^		function check_float($value, $required = false)$/;"	v
+required	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^		function check_int($value, $required = false)$/;"	v
+required	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^		function check_string($value, $required = false, $length = -1)$/;"	v
+res	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^				$res	=	$qry;$/;"	v
+res	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^				$res	=	(int)$this->db->one($qry);$/;"	v
+res	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^					$res	=	mysqli_multi_query($this->dbc, $query);$/;"	v
+res	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^					$res	=	mysqli_query($this->dbc, $query);$/;"	v
+res	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$res	=	$this->_query($multiquery, true);$/;"	v
+res	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$res	=	$this->_query($query);$/;"	v
+res	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$res	=	$this->_query($query, $multi);$/;"	v
+res	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$res	=	$this->_query($query, true);$/;"	v
+resdata	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^					$resdata	=	array();$/;"	v
+result	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^					case 'bool'		:	$result	=	input_validation::check_bool($value, $cur['required']); break;$/;"	v
+result	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^					case 'date'		:	$result	=	input_validation::check_date($value, $cur['required'], $cur['length']); break;$/;"	v
+result	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^					case 'email'	:	$result	=	input_validation::check_email($value, $cur['required']); break;$/;"	v
+result	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^					case 'float'	:	$result	=	input_validation::check_float($value, $cur['required']); break;$/;"	v
+result	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^					case 'integer'	:	$result	=	input_validation::check_int($value, $cur['required']); break;$/;"	v
+result	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^					case 'string'	:	$result	=	input_validation::check_string($value, $cur['required'], $cur['length']); break;$/;"	v
+result	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^					default			:	$result	=	input_validation::advanced($cur['type'], $data, $value, $cur['required']); break;$/;"	v
+result	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^				$result	=	false;$/;"	v
+results	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^				$results	=	$this->db->run_batch();$/;"	v
+return	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^				$return	=	array($/;"	v
+return	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^			$return			=	false;$/;"	v
+return_filename	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function get_url($exceptions = array(), $return_filename = false, $return_cap = false, $framework_url = true)$/;"	v
+return_object	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		public function &return_object($name)$/;"	f
+returns	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^		 * This function returns the rendered content for a template from TemplateObject::fetch().$/;"	f
+revert	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function revert()$/;"	f
+rollback	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function rollback()$/;"	f
+route	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^						$route	=	isset($routes[$rurl]['controller']) ? $routes[$rurl] : $routes[$rurl][$request_method];$/;"	v
+route	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^						$route	=	isset($routes[$rurl_1up]['controller']) ? $routes[$rurl_1up] : $routes[$rurl_1up][$request_method];$/;"	v
+route	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^					$route				=	$route['route'];$/;"	v
+route	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^					$route	=	isset($routes['*']['controller']) ? $routes['*'] : $routes['*'][$request_method];$/;"	v
+route	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^				$route		=	$routelib->route($url, $args, $routes, $request_method);$/;"	v
+route	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^		private function route($url, $args, $request_method, $route_library = null)$/;"	f
+route	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^					$route	=	$route[$request_method];$/;"	v
+route	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^		function route($url, $args, $routes, $request_method, $trigger_errors = true)$/;"	f
+route_arg_count	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^						$route_arg_count	=	1;$/;"	v
+route_arg_count	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^						$route_arg_count	=	2;$/;"	v
+route_arg_count	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^					$route_arg_count	=	1;$/;"	v
+route_arg_count	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^				$route_arg_count	=	0;$/;"	v
+route_found	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^					$route_found		=	true;$/;"	v
+route_found	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^					$route_found	=	true;$/;"	v
+route_found	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^			$route_found	=	false;$/;"	v
+route_found	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^					$route_found	=	true;$/;"	v
+route_found	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^			$route_found	=	false;$/;"	v
+route_library	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^		private function route($url, $args, $request_method, $route_library = null)$/;"	v
+routelib	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^				$routelib	=	&$this->event->library($route_library, array(&$this->event), true, false);$/;"	v
+routes	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^			$routes			=	$this->event->get('routes', array());$/;"	v
+routes	../../../../../cygdrive/d/htdocs/a-frame/core/includes/config.php	/^	$routes	=	array();$/;"	v
+routes	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^			$routes			=	$this->load_routes();$/;"	v
+routes	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^			$routes	=	array();$/;"	v
+routes	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^	class routes extends base$/;"	c
+row	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^					$row	=	$this->fetch_row($res, MSSQL_NUM);$/;"	v
+row	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^					$row	=	$this->fetch_row($res, MYSQLI_NUM);$/;"	v
+row	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^					$row	=	$this->fetch_row($res, MYSQL_NUM);$/;"	v
+row	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function row($query, $params = array(), $rawlit = false)$/;"	f
+run	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		 * The function run to get the current datetime on our DB$/;"	f
+run	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^		public function run(&$event)$/;"	f
+run	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^	class run extends base$/;"	c
+run	../../../../../cygdrive/d/htdocs/a-frame/core/includes/config.php	/^	$run		=	&$event->object('classes\/run', array(&$event));									\/\/ the brain and brawn of a-frame$/;"	v
+run_batch	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function run_batch()$/;"	f
+run_insert	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		function run_insert($data, $functions = array())$/;"	f
+run_query	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		 * 								to get the last ID if $run_query == false$/;"	v
+run_update	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		function run_update($id, $data, $functions = array())$/;"	f
+rurl	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^				$rurl				=	'\/';$/;"	v
+rurl	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^				$rurl		=	'\/' . urldecode($url);$/;"	v
+rurl	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^				$rurl		=	preg_replace('\/\\\/*$\/', '', $rurl);$/;"	v
+rurl_1up	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^						$rurl_1up			=	'\/' . $args[0] . '\/*';$/;"	v
+rurl_1up	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^				$rurl_1up			=	'\/\/';$/;"	v
+s	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^						$s = ' selected="selected" ';$/;"	v
+s	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^						$s = '';$/;"	v
+save	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		function save($data, $functions = array(), $duplicate_check = array(), $update = false, $dup_false = false)$/;"	f
+security	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^							$security	=	trim(preg_replace('\/.*!access\\s+([^\\r\\n]+).*\/is', '$1', $route));$/;"	v
+security	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^						$security	=	null;$/;"	v
+select	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function select($name, $data, $value, $label, $read_only = false, $onchange, $note = '')$/;"	f
+self	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^				$self	=	$_SERVER['PATH_INFO'];$/;"	v
+self	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^				$self	=	$_SERVER['PHP_SELF'] . $_SERVER['PATH_INFO'];$/;"	v
+self	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^				$self	=	$_SERVER['PHP_SELF'];$/;"	v
+separator	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$separator	=	'';$/;"	v
+server	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^				$server	=	'master';$/;"	v
+server	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^				$server	=	'slave';$/;"	v
+set	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^		function set($key, $value)$/;"	f
+set	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^		function set($key, $value, $ttl = '')$/;"	f
+set	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		public function set($key, $value)$/;"	f
+set_layout	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^		public function set_layout($layout)$/;"	f
+set_lock	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		private function set_lock()$/;"	f
+set_ref	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^		function set_ref($key, &$value)$/;"	f
+set_ref	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		public function set_ref($key, &$value)$/;"	f
+show_layout	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^			$show_layout	=	$event->get('show_layout', true);$/;"	v
+show_layout	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^		function show_layout($file = '')$/;"	f
+show_prevnext	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function paginate($page_num, $url_string, $num_pages, $record_count, $items_pp, $show_prevnext = true, $page_var, $i_am_a_sex_machine = true)$/;"	v
+socket	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^					$socket	=	null;$/;"	v
+socket	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^					$socket	=	substr($host, 1);$/;"	v
+sport	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^				$sport	=	isset($this->params['slave']['port']) ? $this->params['slave']['port'] : '';$/;"	v
+src	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^					$src		=	file_get_contents(CONTROLLERS . '\/' . $file);$/;"	v
+ssl_check	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^		private function ssl_check()$/;"	f
+start	../../../../../cygdrive/d/htdocs/a-frame/index.php	/^	$start	=	microtime_float();$/;"	v
+str	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^						$str	=	$this->escape($params[$p]);$/;"	v
+str	../../../../../cygdrive/d/htdocs/a-frame/core/classes/msg.php	/^				$str	=	"<script type=\\"text\/javascript\\" language=\\"javascript\\">\\nvar ". $js_var ." = [\\n";$/;"	v
+str	../../../../../cygdrive/d/htdocs/a-frame/core/classes/msg.php	/^				$str	=	'<ul>';$/;"	v
+str	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^				$str	=	htmlspecialchars($str);$/;"	v
+str	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$str	=	'$/;"	v
+str	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$str	=	'<label for="'.$id.'">'. $label;$/;"	v
+str	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$str	=	str_replace('[[input]]', $input, $str);$/;"	v
+str	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$str	=	str_replace('[[label]]', $label, $str);$/;"	v
+str	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$str	=	view_helper::_template($label, $input);$/;"	v
+str	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$str	=	view_helper::_template($label, $input, 'dob');$/;"	v
+strict_validation	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$strict_validation	=	isset($this) ? $this->strict_validation : $strict_validation;$/;"	v
+strict_validation	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		var $strict_validation	=	false;$/;"	v
+suppress_auto_timestamp	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		var $suppress_auto_timestamp	=	false;$/;"	v
+t	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^			$t		=	array_keys($gpc);$/;"	v
+t	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^				$t = strtotime($value)$/;"	v
+table	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		var $table	=	'';$/;"	v
+takes	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		 * This function takes ?'s, replaces it with the "'" escaped param, and puts quotes$/;"	f
+tbl	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		function tbl($tbl_name)$/;"	f
+template	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^				$this->template		=	&$event->return_object('template');$/;"	v
+template	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^		var $template;$/;"	v
+template	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^			$template	=	&$event->object('template');$/;"	v
+template	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^		function template(&$event, $template_dir = '', $layout_dir = '')$/;"	f
+template	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^	class template extends base$/;"	c
+template	../../../../../cygdrive/d/htdocs/a-frame/core/includes/config.php	/^	$template	=	&$event->object('classes\/template', array(&$event, VIEWS, VIEWS . '\/layouts'));	\/\/ needed for, you know, templating (loading and populating views)$/;"	v
+template	../../../../../cygdrive/d/htdocs/a-frame/skeleton/views/errors/loading_view.php	/^		$template	=	$data['file'];$/;"	v
+template	../../../../../cygdrive/d/htdocs/a-frame/skeleton/views/errors/loading_view.php	/^		$template	=	$data['template'];$/;"	v
+template_dir	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^			$this->template_dir	=	empty($template_dir) ? APPPATH . 'views' : $template_dir;$/;"	v
+template_dir	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^		function template(&$event, $template_dir = '', $layout_dir = '')$/;"	v
+template_dir	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^		var $template_dir;$/;"	v
+text	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function text($name, $value = '', $label = '', $read_only = false, $note = '', $size = 0, $max_length = 1000, $params = array())$/;"	f
+textarea	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function textarea($name, $value = '', $label = '', $read_only = false, $note = '', $rows = 5, $cols = 30, $params = array())$/;"	f
+that	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^	 * Cache object and interface that wraps around a few different cache objects.$/;"	c
+that	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^	 * Cache object and interface that wraps around a few different cache objects.$/;"	i
+that	../../../../../cygdrive/d/htdocs/a-frame/index.php	/^	 * Basically, the function that runs the whole framework.$/;"	f
+that	../../../../../cygdrive/d/htdocs/a-frame/index.php	/^	 * Global function that returns the current time in microseconds$/;"	f
+there_definitely_is_no_class	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^			$there_definitely_is_no_class = false;$/;"	v
+there_is_no_class	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^				$there_is_no_class = false;$/;"	v
+throw	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^		function fetch($template, $throw = true)$/;"	v
+time	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$time	=	strtotime('2008\/01\/15');	\/\/ our start date$/;"	v
+tmp	../../../../../cygdrive/d/htdocs/a-frame/core/classes/template.php	/^				$tmp	=	NULL;$/;"	v
+tmp	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^				$tmp	=	array();$/;"	v
+to	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		 * @param string $class		Name\/path of class to load$/;"	c
+to	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		 * Set a value in $GLOBALS['_event'] using $key. Sister function to event::get(). get() gets data out,$/;"	f
+to	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		 * Gets the current URL. Used by view_helper::paginate(), mainly, but can also be used as a standalone function to get$/;"	f
+tpl	../../../../../cygdrive/d/htdocs/a-frame/core/classes/error.php	/^			$tpl	=	'errors\/'.$type.'.php';$/;"	v
+transaction	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function transaction()$/;"	f
+trigger	../../../../../cygdrive/d/htdocs/a-frame/skeleton/controllers/error_handler.php	/^		function trigger($type, $data)$/;"	f
+trigger_errors	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^		function route($url, $args, $routes, $request_method, $trigger_errors = true)$/;"	v
+ttl	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^				$ttl	=	$this->ttl;$/;"	v
+ttl	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^			$this->ttl	=	$options['ttl'];$/;"	v
+ttl	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^		function set($key, $value, $ttl = '')$/;"	v
+ttl	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^		var $ttl;$/;"	v
+type	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^		function redirect($url, $type = '')$/;"	v
+type	../../../../../cygdrive/d/htdocs/a-frame/core/classes/error.php	/^				$type	=	$erh->trigger($type, $data);$/;"	v
+type	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^						$type	=	'controller';$/;"	v
+type	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^						$type	=	'library';$/;"	v
+type	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^				if($type == 'controller' || $type == 'library')$/;"	v
+type	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		 * If not specifying the class type event::controller(), event::library, etc, be sure to set a prefix:$/;"	c
+type	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^		private function &load_object($class, $params, $run_init, $type = '')$/;"	v
+type	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^		 * @param string $type		The variable we are comparing $value to: if $type = '=[password]', then $value$/;"	v
+type	../../../../../cygdrive/d/htdocs/a-frame/core/classes/msg.php	/^						$type = '';$/;"	v
+type	../../../../../cygdrive/d/htdocs/a-frame/core/classes/msg.php	/^						$type = 'error';$/;"	v
+type	../../../../../cygdrive/d/htdocs/a-frame/core/classes/msg.php	/^						$type = 'success';$/;"	v
+type	../../../../../cygdrive/d/htdocs/a-frame/core/classes/msg.php	/^					$type	=	$this->messages[$i]['type'];$/;"	v
+type	../../../../../cygdrive/d/htdocs/a-frame/core/classes/msg.php	/^		 * Add a message to the queue for later dumping. Sets the error flag if $type == MSG_ERROR$/;"	v
+type	../../../../../cygdrive/d/htdocs/a-frame/core/classes/msg.php	/^		function add($msg, $type = MSG_ERROR)$/;"	v
+type	../../../../../cygdrive/d/htdocs/a-frame/skeleton/controllers/error_handler.php	/^				$type	=	'cron';$/;"	v
+url	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^					$url	=	str_replace(WEBROOT, '', $url);$/;"	v
+url	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^				$url				=	'\/'. CRON_CONTROLLER .'\/'. $this->action;$/;"	v
+url	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^				$url	=	isset($_GET['url']) ? $_GET['url'] : '';$/;"	v
+url	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^				$url	=	isset($_SERVER['REQUEST_URI']) ? preg_replace('\/(\\?|\\&).*\/', '', $_SERVER['REQUEST_URI']) : '';$/;"	v
+url	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^			$url	=	'\/'.$this->controller;$/;"	v
+url	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^			$url	=	preg_replace('\/(^\\\/|\\\/$)\/', '', $url);$/;"	v
+url	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^					$url	=	$url . '&';$/;"	v
+url	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^					$url	=	$url . '?';$/;"	v
+url	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^					$url	=	$url;$/;"	v
+url	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^					$url	=	preg_replace($regex, $rep, $url);$/;"	v
+url	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^					$url	=	preg_replace('\/.*\\\/\/i', '', $_SERVER['PHP_SELF']) . '?' . $url;$/;"	v
+url	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^					$url	=	view_helper::_get_self() . '?' . $url;$/;"	v
+url	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^				$url	=	preg_replace('\/(\\?|&)$\/', '', $url);$/;"	v
+url	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$url	=	$_SERVER['QUERY_STRING'];$/;"	v
+url	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$url	=	preg_replace('\/&$\/', '', preg_replace('\/^&\/', '', $url));$/;"	v
+url	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		 * $url	=	\/products\/list\/[page]$/;"	v
+use_cache	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^				$this->use_cache	=	false;$/;"	v
+use_cache	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^			$this->use_cache	=	$options['caching'];$/;"	v
+use_cache	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^		var $use_cache;$/;"	v
+use_master	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^					$use_master	=	true;$/;"	v
+use_master	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$use_master	=	$this->in_transaction ? true : false;$/;"	v
+use_master	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		public function use_master()$/;"	f
+use_server	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$use_server	=	$this->determine_query_server($prepared);$/;"	v
+use_slave	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		private function use_slave()$/;"	f
+used	../../../../../cygdrive/d/htdocs/a-frame/core/classes/error.php	/^	 * Error class used for loading correct templates and layout when an error is triggered.$/;"	c
+using	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$this->using	=	'master';$/;"	v
+using	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^			$this->using	=	'slave';$/;"	v
+using	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		private $using;$/;"	v
+val	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^				$val	=	rand(0, 1000000);$/;"	v
+val	../../../../../cygdrive/d/htdocs/a-frame/core/classes/event.php	/^				$val	=	$gpc[$key];$/;"	v
+valid	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^			$valid	=	preg_match('\/^(([a-z0-9!#$%&*+-=?^_`{|}~]$/;"	v
+validate	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^		function validate($data)$/;"	f
+value	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^			$value	=	$this->get_var_ref($key);$/;"	v
+value	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_controller.php	/^			$value	=	&$this->template->get_template_vars($key);$/;"	v
+value	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^				$value	=	isset($data[$key]) ? $data[$key] : null;$/;"	v
+value	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^				if(isset($data[$matches[1]]) && $value == $data[$matches[1]])$/;"	v
+value	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^			if(!$required && $value == '')$/;"	v
+value	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^			if(!$required && $value === '')$/;"	v
+value	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^			if(!$required && ($value === '' || $value === null))$/;"	v
+value	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^			if($value === true || $value === false || $value === 1 || $value === 0)$/;"	v
+value	../../../../../cygdrive/d/htdocs/a-frame/core/classes/input_validation.php	/^		 * @param bool $required	(optional) Whether or not this field is required. If false and $value = '' then$/;"	v
+value	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^				$value	=	'';$/;"	v
+value	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^				$value	=	date('m\/d\/Y', $date);$/;"	v
+value	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function dob($name, $value = '', $label = '', $read_only = false, $note = '')$/;"	v
+value	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function image($src, $value = '', $params = '')$/;"	v
+value	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function password($name, $value = '', $label = '', $read_only = false, $note = '', $size = 0, $maxLength = 1000)$/;"	v
+value	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function text($name, $value = '', $label = '', $read_only = false, $note = '', $size = 0, $max_length = 1000, $params = array())$/;"	v
+value	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^		function textarea($name, $value = '', $label = '', $read_only = false, $note = '', $rows = 5, $cols = 30, $params = array())$/;"	v
+values	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^				$values	=	substr($values, 0, -1);$/;"	v
+values	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^			$values	=	"";$/;"	v
+view_helper	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^	class view_helper$/;"	c
+we	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^		 * What cache class we're using...default memcache$/;"	c
+webroot	../../../../../cygdrive/d/htdocs/a-frame/core/classes/run.php	/^				$webroot	=	WEBROOT;$/;"	v
+weight	../../../../../cygdrive/d/htdocs/a-frame/core/classes/cache.php	/^						$weight		=	isset($options['servers'][$i][3]) ? $options['servers'][$i][3] : 10;$/;"	v
+where	../../../../../cygdrive/d/htdocs/a-frame/core/classes/base/base_model.php	/^			$where	=	"1 = 1 ";$/;"	v
+will	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		 * other database mode with this function will break! We could program in support for splitting$/;"	f
+will	../../../../../cygdrive/d/htdocs/a-frame/skeleton/library/routes.php	/^		 * route, and that function will only be called if that request method is used. In the$/;"	f
+wraps	../../../../../cygdrive/d/htdocs/a-frame/core/classes/db.php	/^		 * This function wraps db::query(), except it doesn't return the query resource. $/;"	f
+y	../../../../../cygdrive/d/htdocs/a-frame/core/classes/view_helper.php	/^			$y		=	(int)date('Y');$/;"	v
