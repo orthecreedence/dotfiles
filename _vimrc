@@ -35,6 +35,9 @@ filetype indent on
 " makes cursor go to beinning of tab in normal mode instead of end of tab
 "set list lcs=tab:\ \ 
 
+" don't change cursor column when switching between buffers
+set nostartofline
+
 " enable paste mode for disabling auto-indent when pasting large blocks of
 " text/code
 set pastetoggle=<F2>
