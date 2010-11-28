@@ -181,10 +181,13 @@ map <F7> :silent lmake<cr>:lwindow <cr>:redraw!<cr>
 " set up font shit for gui
 if has("win32")
 	set guifont=courier_new_cyr:h10
+	autocmd GUIEnter * simalt ~X
+else
+	set guifont=Courier\ 10\ Pitch\ 10
+	if has("gui")
+		set toolbar=icons,text " how to show the toolbar
+	endif
 endif
-
-" start maximized
-autocmd GUIEnter * simalt ~X
 
 " Remove menu bar
 "set guioptions-=m
