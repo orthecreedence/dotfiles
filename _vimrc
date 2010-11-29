@@ -156,8 +156,10 @@ set wildmenu
 set noswapfile
 
 " load NERDTree on start
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd p
+if has("gui")
+	autocmd VimEnter * NERDTree
+	autocmd VimEnter * wincmd p
+endif
 
 " ------------ PHP shit -------------
 " SQL/HTML string syntax highlighting
