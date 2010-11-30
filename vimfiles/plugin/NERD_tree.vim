@@ -2175,6 +2175,10 @@ function! s:Path.ignore()
         return 1
     endif
 
+    if lastPathComponent =~ '^\.$' || lastPathComponent =~ '^\.\.$'
+        return 1
+    endif
+
     return 0
 endfunction
 
