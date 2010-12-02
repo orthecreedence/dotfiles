@@ -18,7 +18,7 @@ if version > 580
 endif
 let g:colors_name="void"
 
-hi Normal	guifg=#f0f0f0 guibg=grey15
+hi Normal	guifg=#e0e0e0 guibg=grey15
 
 " highlight groups
 hi Cursor	guibg=khaki guifg=slategrey
@@ -54,7 +54,7 @@ hi WarningMsg	guifg=salmon
 " syntax highlighting groups
 hi Comment	guifg=grey50
 hi Constant	guifg=#e09085
-hi Identifier	guifg=#f0f0f0
+hi Identifier	guifg=#e0e0e0
 hi Statement	guifg=darkkhaki		" #bbccee
 hi PreProc	guifg=#c8e0b0
 hi Type		guifg=darkkhaki
