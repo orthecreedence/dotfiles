@@ -70,7 +70,9 @@ set wrap!
 set scrolloff=2
 
 " no code folding =]
-set nofoldenable
+"set nofoldenable
+set foldmethod=syntax
+let php_folding = 3			" fold functions (no classes, no {} blocks)
 
 " show ruler line, col
 set ruler
