@@ -165,7 +165,7 @@ endif
 
 " ------------ PHP shit -------------
 " SQL/HTML string syntax highlighting
-let php_sql_query = 1 
+let php_sql_query = 0
 let php_htmlInStrings = 1
 let php_smart_members = 1		" turn off if highlighting is slow
 let php_alt_properties = 1		" requires php_smart_members
