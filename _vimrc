@@ -69,8 +69,8 @@ set wrap!
 " how many lines of buffer around cursor when scrolling
 set scrolloff=2
 
-" no code folding =]
-"set nofoldenable
+" enable code folding, but essentially always open folds and let ME control when to close folds
+set foldlevel=999			" all folds automatically open
 set foldmethod=syntax
 let php_folding = 3			" fold functions (no classes, no {} blocks)
 
