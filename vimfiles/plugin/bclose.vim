@@ -37,7 +37,8 @@ function s:Kwbd(kwbdStage)
       execute s:kwbdWinNum . 'wincmd w'
     endif
     if(buflisted(s:kwbdBufNum) || s:kwbdBufNum == bufnr("%"))
-      execute "bd! " . s:kwbdBufNum
+      "execute "bd! " . s:kwbdBufNum
+      execute "bw! " . s:kwbdBufNum
     endif
     if(!s:buflistedLeft)
       set buflisted
