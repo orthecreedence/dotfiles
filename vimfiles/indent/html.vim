@@ -23,7 +23,7 @@ echo "Sourcing html indent"
 
 
 " [-- local settings (must come before aborting the script) --]
-setlocal indentexpr=HtmlIndentGetter(v:lnum)
+setlocal indentexpr=HtmlIndentGet(v:lnum)
 setlocal indentkeys=o,O,*<Return>,<>>,{,}
 
 
@@ -177,7 +177,7 @@ fun! <SID>HtmlIndentSum(lnum, style)
     return 0
 endfun
 
-fun! HtmlIndentGetter(lnum)
+fun! HtmlIndentGet(lnum)
 	
 	echo "Grabbing html indent for line: " . a:lnum
     " Find a non-empty line above the current line.
