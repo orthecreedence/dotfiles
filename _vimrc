@@ -72,6 +72,7 @@ set scrolloff=2
 " no code folding =]
 "set nofoldenable
 set foldmethod=syntax
+set foldlevelstart=99		" disable folding until needed
 let php_folding = 3			" fold functions (no classes, no {} blocks)
 
 " show ruler line, col
