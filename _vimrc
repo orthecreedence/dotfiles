@@ -69,8 +69,8 @@ set wrap!
 " how many lines of buffer around cursor when scrolling
 set scrolloff=2
 
-" no code folding =]
-"set nofoldenable
+" enable code folding, but essentially always open folds and let ME control when to close folds
+set foldlevel=999			" all folds automatically open
 set foldmethod=syntax
 set foldlevelstart=99		" disable folding until needed
 let php_folding = 3			" fold functions (no classes, no {} blocks)
@@ -182,6 +182,11 @@ if !exists("autocommands_loaded")
 	autocmd BufRead *.php set errorformat=%f:%l:\ %m
 endif
 map <F7> :silent lmake<cr>:lwindow <cr>:redraw!<cr>
+
+" ------------c/c++ shit ---------------
+let c_no_if0_fold = 1
+let c_no_comment_fold = 1
+set foldnestmax=1
 
 " set up font shit for gui
 if has("win32")
