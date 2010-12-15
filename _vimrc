@@ -72,7 +72,6 @@ set scrolloff=2
 " enable code folding, but essentially always open folds and let ME control when to close folds
 set foldlevel=999			" all folds automatically open
 set foldmethod=syntax
-set foldlevelstart=99		" disable folding until needed
 let php_folding = 3			" fold functions (no classes, no {} blocks)
 
 " show ruler line, col
