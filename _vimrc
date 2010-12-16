@@ -13,6 +13,16 @@ behave mswin
 " for all new files.
 set fileformats=unix,dos
 
+" unicode
+if has("multi_byte")
+	if &termencoding == ""
+		let &termencoding = &encoding
+	endif
+	set encoding=utf-8
+	setglobal fileencoding=utf-8 bomb
+	set fileencodings=ucs-bom,utf-8,latin1
+endif
+
 " disable appending newlines at end of file (apparently it's good form to
 " leave it in, so let's leave it...)
 "set noeol
