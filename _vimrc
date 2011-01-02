@@ -14,14 +14,14 @@ behave mswin
 set fileformats=unix,dos
 
 " unicode
-if has("multi_byte")
-	if &termencoding == ""
-		let &termencoding = &encoding
-	endif
-	set encoding=utf-8
-	setglobal fileencoding=utf-8 bomb
-	set fileencodings=ucs-bom,utf-8,latin1
-endif
+"if has("multi_byte")
+"	if &termencoding == ""
+"		let &termencoding = &encoding
+"	endif
+"	set encoding=utf-8
+"	setglobal fileencoding=utf-8 bomb
+"	set fileencodings=ucs-bom,utf-8,latin1
+"endif
 
 " disable appending newlines at end of file (apparently it's good form to
 " leave it in, so let's leave it...)
@@ -31,7 +31,7 @@ endif
 set bs=2
 
 " set file encoding UTF8
-setlocal fileencoding=utf-8
+"setlocal fileencoding=utf-8
 
 " set up our intelligent indenting
 set autoindent		" enable autoindenting
@@ -40,7 +40,7 @@ set shiftwidth=4	" how much indent to do when autoindenting
 
 " indenting based on filetype
 filetype indent on
-"filetype plugin on
+filetype plugin on
 
 " makes cursor go to beinning of tab in normal mode instead of end of tab
 "set list lcs=tab:\ \ 
@@ -54,6 +54,8 @@ set pastetoggle=<F2>
 
 " use 4-space tabs (still tabs tho, not spaces)
 set tabstop=4
+autocmd FileType lisp setlocal expandtab
+autocmd FileType lisp setlocal tabstop=2
 
 " better searching (disregard case unless explicitely given caps)
 set incsearch
