@@ -192,7 +192,7 @@ if !exists("autocommands_loaded")
 	autocmd BufRead *.php set makeprg=c:\cygwin\usr\local\bin\phplint.exe\ --no-print-notices\ --no-print-warnings\ %
 	autocmd BufRead *.php set errorformat=%f:%l:\ %m
 endif
-map <F7> :silent lmake<cr>:lwindow <cr>:redraw!<cr>
+map <F6> :silent lmake<cr>:lwindow <cr>:redraw!<cr>
 
 " ------------c/c++ shit ---------------
 let c_no_if0_fold = 1
