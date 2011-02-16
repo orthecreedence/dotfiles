@@ -172,8 +172,8 @@ set noswapfile
 " load NERDTree on start
 if has("gui")
 	"autocmd VimEnter * NERDTree
+	"autocmd VimEnter * wincmd p		" when starting nerdtree put cursor in main window
 	autocmd VimEnter * CMiniBufExplorer
-	autocmd VimEnter * wincmd p
 endif
 
 " ------------ Lisp shit ------------
