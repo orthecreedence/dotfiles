@@ -180,16 +180,19 @@ endif
 "let g:slimv_lisp = 'c:/lisp/ccl/wx86cl64.exe'		" not portable, disabled
 
 " ------------ PHP shit -------------
-" SQL/HTML string syntax highlighting
+" syntax crap
 let php_sql_query = 0
+let php_strict_blocks = 0					" set to 0 if editing slows down
 let php_htmlInStrings = 0
-let php_smart_members = 0		" turn off if highlighting is slow
-let php_alt_properties = 0		" requires php_smart_members
-let php_highlight_quotes = 1	" count quotes as part of string when highlighting
-let php_show_semicolon = 0		" this makes code look weird
-let PHP_default_indenting = 1	" add a default of one tab after opening <?
-let php_strict_blocks = 0		" set to 0 if editing slows down
-let g:PHP_autoformatcomment=1	"blah
+let php_smart_members = 0					" turn off if highlighting is slow
+let php_alt_properties = 0					" requires php_smart_members
+let php_highlight_quotes = 1				" count quotes as part of string when highlighting
+let php_show_semicolon = 0					" this makes code look weird
+" indentation
+let PHP_default_indenting = 1				" add a default of one tab after opening <?
+let PHP_autoformatcomment = 1				" correct commenting for PHP
+let PHP_outdentphpescape = 0				" <? and ?> are indented at the code level
+let PHP_vintage_case_default_indent = 0		" case ...: gets an extra indent (if set to 1)
 
 " add PHP syntax checking
 if !exists("autocommands_loaded")
