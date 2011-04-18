@@ -43,6 +43,8 @@ endfun
 
 " [-- <ELEMENT ? - - ...> --]
 call <SID>HtmlIndentPush('a')
+call <SID>HtmlIndentPush('p')
+call <SID>HtmlIndentPush('li')
 call <SID>HtmlIndentPush('abbr')
 call <SID>HtmlIndentPush('acronym')
 call <SID>HtmlIndentPush('address')
