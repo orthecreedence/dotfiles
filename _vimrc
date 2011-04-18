@@ -105,6 +105,9 @@ set nu
 " makes focus follow mouse cursor
 "set mousefocus
 
+" init pathogen, includes all the modules under the vimfiles/bundle/
+call pathogen#runtime_append_all_bundles()
+
 " -----------------------------------------
 " --------- some shell remappings ---------
 " -----------------------------------------

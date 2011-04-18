@@ -2175,10 +2175,6 @@ function! s:Path.ignore()
         return 1
     endif
 
-    if lastPathComponent =~ '^\.$' || lastPathComponent =~ '^\.\.$'
-        return 1
-    endif
-
     return 0
 endfunction
 
@@ -2983,14 +2979,8 @@ function! s:dumpHelp()
         let @h=@h."\" :OpenBookmark <name>\n"
         let @h=@h."\" :ClearBookmarks [<names>]\n"
         let @h=@h."\" :ClearAllBookmarks\n"
-        
-        " HACK (AL) - don't crunch up against .. up a dir
-        let @h=@h."\n\n"
     else
         let @h="\" Press ". g:NERDTreeMapHelp ." for help\n"
-
-        " HACK (AL) - don't need this clutter...
-        let @h=''
     endif
 
     silent! put h
@@ -3261,7 +3251,7 @@ function! s:renderView()
     call s:dumpHelp()
 
     "delete the blank line before the help and add one after it
-    "call setline(line(".")+1, "")
+    call setline(line(".")+1, "")
     call cursor(line(".")+1, col("."))
 
     if b:NERDTreeShowBookmarks
@@ -3269,9 +3259,7 @@ function! s:renderView()
     endif
 
     "add the 'up a dir' line
-    " HACK (AL) - disabled so '.. up a dir' is on very top line.
-    "call setline(line(".")+1, s:tree_up_dir_line)
-    call setline(line("."), s:tree_up_dir_line)
+    call setline(line(".")+1, s:tree_up_dir_line)
     call cursor(line(".")+1, col("."))
 
     "draw the header line
