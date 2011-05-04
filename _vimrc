@@ -180,7 +180,11 @@ if has("gui")
 endif
 
 " ------------ Lisp shit ------------
-"let g:slimv_lisp = 'c:/lisp/ccl/wx86cl64.exe'		" not portable, disabled
+if has('win32')
+	let g:slimv_lisp = 'c:/lisp/ccl/wx86cl64.exe'
+else
+	let g:slimv_lisp = '/usr/local/bin/ccl'
+endif
 
 " ------------ PHP shit -------------
 " syntax crap
