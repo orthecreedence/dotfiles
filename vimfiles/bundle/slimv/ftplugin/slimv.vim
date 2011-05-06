@@ -2297,7 +2297,9 @@ endif
 
 " Edit commands
 inoremap <silent> <C-X>0     <C-O>:call SlimvCloseForm()<CR>
-inoremap <silent> <Tab>      <C-R>=pumvisible() ? "\<lt>C-N>" : "\<lt>C-X>\<lt>C-O>"<CR>
+" AL - disabling because tab is a fucking annoying character to map to
+" autocomplete...
+"inoremap <silent> <Tab>      <C-R>=pumvisible() ? "\<lt>C-N>" : "\<lt>C-X>\<lt>C-O>"<CR>
 call s:MenuMap( 'Slim&v.Edi&t.Close-&Form',                     '<Leader>)',  '<Leader>tc',  ':<C-U>call SlimvCloseForm()<CR>' )
 call s:MenuMap( 'Slim&v.Edi&t.&Complete-Symbol<Tab>Tab',        '',           '',            '<Ins><C-X><C-O>' )
 call s:MenuMap( 'Slim&v.Edi&t.&Paredit-Toggle',                 '<Leader>(',  '<Leader>(t',  ':<C-U>call PareditToggle()<CR>' )
