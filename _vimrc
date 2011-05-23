@@ -79,7 +79,7 @@ set matchtime=1
 set wrap!
 
 " how many lines of buffer around cursor when scrolling
-set scrolloff=2
+set scrolloff=1
 
 " enable code folding, but essentially always open folds and let ME control when to close folds
 set foldlevel=999			" all folds automatically open
@@ -111,10 +111,6 @@ call pathogen#runtime_append_all_bundles()
 " -----------------------------------------
 " --------- some shell remappings ---------
 " -----------------------------------------
-" make ';' open command windows as opposed to ':' (saves having to hold shift,
-" press ';', release shift)
-nnoremap ; :
-
 " make ctrl+x close the current buffer (without closing the window)
 nmap <C-x> <Plug>Kwbd
 
@@ -155,7 +151,7 @@ map <F9> :NERDTreeToggle <CR> :TMiniBufExplorer <CR> :TMiniBufExplorer <CR>
 let g:miniBufExplUseSingleClick = 1
 
 " number of spaces between tabs
-let g:miniBufExplNumSpaces = 2
+let g:miniBufExplNumSpaces = 1
 
 " show tabs only if there are more than two buffers
 let g:miniBufExplorerMoreThanOne=2
