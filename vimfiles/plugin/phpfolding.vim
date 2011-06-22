@@ -133,7 +133,7 @@ function! s:EnablePHPFolds(...) " {{{
 	call s:PHPCustomFolds()
 	" .. Fold all
 	"normal zM
-	" AL - ...actually not, start unfolded
+	" AL - ...actually not, start unfolded. lesbian.
 	normal zR
 
 	" Restore previously opened folds
