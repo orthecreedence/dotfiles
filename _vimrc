@@ -5,8 +5,7 @@ set nocompatible
 " shift text selection, movement/deletion line wrapping and the like. lots of
 " shorcuts to keep you from having to switch from insert to visual/command 
 " mode incessantly. honestly, a lot more useful =]
-source $VIMRUNTIME/mswin.vim
-behave mswin
+runtime behave/mswin.vim
 
 " Make sre we only use UNIX newlines (\n). When reading files, the order below
 " makes no difference, BUT since unix is first, that newline type will be used
