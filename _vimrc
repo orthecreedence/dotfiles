@@ -191,7 +191,7 @@ let php_alt_properties = 0					" requires php_smart_members
 let php_highlight_quotes = 1				" count quotes as part of string when highlighting
 let php_show_semicolon = 0					" this makes code look weird
 " indentation
-let PHP_default_indenting = 1				" add a default of one tab after opening <?
+let PHP_default_indenting = 0				" add a default of one tab after opening <?
 let PHP_autoformatcomment = 1				" correct commenting for PHP
 let PHP_outdentphpescape = 0				" <? and ?> are indented at the code level
 let PHP_vintage_case_default_indent = 0		" case ...: gets an extra indent (if set to 1)
