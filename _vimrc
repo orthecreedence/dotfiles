@@ -74,8 +74,12 @@ syntax on
 set showmatch
 set matchtime=1
 
+" Turn on search hilighting, but pressing esc will turn it off for that search
+set hls
+nnoremap <esc> :noh<CR>
+
 " turn off wordwrap
-set wrap!
+set nowrap
 
 " how many lines of buffer around cursor when scrolling
 set scrolloff=1
@@ -84,6 +88,8 @@ set scrolloff=1
 set foldlevel=999			" all folds automatically open
 set foldmethod=syntax
 let php_folding = 3			" fold functions (no classes, no {} blocks)
+let g:DisableAutoPHPFolding = 1
+map <F7> <Esc>:EnableFastPHPFolds<Cr>
 
 " show ruler line, col
 set ruler
