@@ -77,6 +77,7 @@ set matchtime=1
 " Turn on search hilighting, but pressing esc will turn it off for that search
 set hls
 nnoremap <esc> :noh<CR>
+nnoremap <C-c> :noh<CR>
 
 " turn off wordwrap
 set nowrap
