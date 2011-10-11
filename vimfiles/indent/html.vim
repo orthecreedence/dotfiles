@@ -106,6 +106,8 @@ call <SID>HtmlIndentPush('tt')
 call <SID>HtmlIndentPush('u')
 call <SID>HtmlIndentPush('ul')
 call <SID>HtmlIndentPush('var')
+call <SID>HtmlIndentPush('header')
+call <SID>HtmlIndentPush('footer')
 
 
 " [-- <ELEMENT ? O O ...> --]
