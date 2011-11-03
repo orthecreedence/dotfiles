@@ -12,6 +12,9 @@ runtime behave/mswin.vim
 " for all new files.
 set fileformats=unix,dos
 
+" set up a comma leader
+let mapleader = ","
+
 " unicode
 "if has("multi_byte")
 "	if &termencoding == ""
@@ -118,7 +121,8 @@ call pathogen#runtime_append_all_bundles()
 " --------- some shell remappings ---------
 " -----------------------------------------
 " make ctrl+x close the current buffer (without closing the window)
-nmap <C-x> <Plug>Kwbd
+"nmap <C-x> <Plug>Kwbd
+nmap <Leader>x <Plug>Kwbd
 
 " make ctrl+pageup/down control our buffer selection
 map <C-PageUp> :bprevious <CR>
@@ -142,11 +146,18 @@ vmap <S-Tab> <gv
 map <Home> :SmartHomeKey <CR>
 imap <Home> <C-O>:SmartHomeKey<CR>
 
+" FUF mappings
+map <F3> :FufDir <CR>
+map <F4> :FufCoverageFile <CR>
+map <Leader>b :FufBuffer <CR>
+let g:fuf_enumeratingLimit = 100
+
 " F8 toggles MiniBufExplorer
-map <F8> :TMiniBufExplorer <CR>
+"map <F8> :TMiniBufExplorer <CR>
 
 " F9 toggles NERDTree, but make sure MiniBufExplorer is always on top =]
-map <F9> :NERDTreeToggle <CR> :TMiniBufExplorer <CR> :TMiniBufExplorer <CR>
+map <F9> :NERDTreeToggle <CR>
+"map <F9> :NERDTreeToggle <CR> :TMiniBufExplorer <CR> :TMiniBufExplorer <CR>
 " -----------------------------------------
 
 
@@ -163,7 +174,7 @@ let g:miniBufExplNumSpaces = 1
 let g:miniBufExplorerMoreThanOne=2
 
 " reload MinBufExpl on buffer changes
-autocmd BufRead,BufNew,BufWritePost :call UMiniBufExplorer
+"autocmd BufRead,BufNew,BufWritePost :call UMiniBufExplorer
 " -----------------------------------------
 
 " <TAB> behaves like bash, not DOS
@@ -178,7 +189,7 @@ set noswapfile
 if has("gui")
 	"autocmd VimEnter * NERDTree
 	"autocmd VimEnter * wincmd p		" when starting nerdtree put cursor in main window
-	autocmd VimEnter * CMiniBufExplorer
+	"autocmd VimEnter * CMiniBufExplorer
 endif
 
 " ------------ Lisp shit ------------
