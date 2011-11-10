@@ -77,9 +77,9 @@ syntax on
 set showmatch
 set matchtime=1
 
-" Turn on search hilighting, but pressing esc will turn it off for that search
-set hls
-"map <esc> :noh<CR>			" doesn't fucking work
+" <Leader>h will turn ON search highlighting. C-c will temporarily disable it
+" for a specific search.
+nmap <Leader>h :set hls!<CR>
 nmap <C-c> :noh<CR>
 
 " turn off wordwrap
