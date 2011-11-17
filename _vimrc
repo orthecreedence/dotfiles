@@ -54,6 +54,16 @@ set nostartofline
 " text/code
 set pastetoggle=<F2>
 
+" lol isnt middle-mouse paste annoying? let's disable it.
+map <MiddleMouse> <Nop>
+imap <MiddleMouse> <Nop>
+map <2-MiddleMouse> <Nop>
+imap <2-MiddleMouse> <Nop>
+map <3-MiddleMouse> <Nop>
+imap <3-MiddleMouse> <Nop>
+map <4-MiddleMouse> <Nop>
+imap <4-MiddleMouse> <Nop>
+
 " use 4-space tabs (still tabs tho, not spaces)
 set tabstop=4
 autocmd FileType lisp setlocal expandtab
