@@ -32,6 +32,9 @@ let mapleader = ","
 " backspace can delete prev chars
 set bs=2
 
+" always show status line
+"set laststatus=2
+
 " set file encoding UTF8
 "setlocal fileencoding=utf-8
 
