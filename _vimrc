@@ -38,6 +38,9 @@ if has('autocmd')
   autocmd GUIEnter * set visualbell t_vb=
 endif
 
+" always show status line
+"set laststatus=2
+
 " set file encoding UTF8
 "setlocal fileencoding=utf-8
 
@@ -59,6 +62,16 @@ set nostartofline
 " enable paste mode for disabling auto-indent when pasting large blocks of
 " text/code
 set pastetoggle=<F2>
+
+" lol isnt middle-mouse paste annoying? let's disable it.
+map <MiddleMouse> <Nop>
+imap <MiddleMouse> <Nop>
+map <2-MiddleMouse> <Nop>
+imap <2-MiddleMouse> <Nop>
+map <3-MiddleMouse> <Nop>
+imap <3-MiddleMouse> <Nop>
+map <4-MiddleMouse> <Nop>
+imap <4-MiddleMouse> <Nop>
 
 " use 4-space tabs (still tabs tho, not spaces)
 set tabstop=4
