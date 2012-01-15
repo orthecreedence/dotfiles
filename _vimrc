@@ -32,6 +32,12 @@ let mapleader = ","
 " backspace can delete prev chars
 set bs=2
 
+" turn off annoying bells when hitting escape too many times n shit
+set noerrorbells visualbell t_vb=
+if has('autocmd')
+  autocmd GUIEnter * set visualbell t_vb=
+endif
+
 " set file encoding UTF8
 "setlocal fileencoding=utf-8
 
@@ -80,7 +86,7 @@ set matchtime=1
 " <Leader>h will turn ON search highlighting. C-c will temporarily disable it
 " for a specific search.
 nmap <Leader>h :set hls!<CR>
-nmap <C-c> :noh<CR>
+"nmap <C-c> :noh<CR>
 
 " turn off wordwrap
 set nowrap
@@ -93,7 +99,7 @@ set foldlevel=999			" all folds automatically open
 set foldmethod=syntax
 let php_folding = 3			" fold functions (no classes, no {} blocks)
 let g:DisableAutoPHPFolding = 1
-map <F7> <Esc>:EnableFastPHPFolds<Cr>
+map <Leader>f <Esc>:EnableFastPHPFolds<Cr>
 
 " show ruler line, col
 set ruler
@@ -192,9 +198,16 @@ if has("gui")
 	"autocmd VimEnter * CMiniBufExplorer
 endif
 
-" ------------ Lisp shit ------------
+" ------------ Lisp/slimv shit ------------
+let g:swank_log = 0
+let g:slimv_leader = '\'
+let g:slimv_repl_max_len = 200
+let g:slimv_force_repl_scroll = 1
+let g:slimv_updatetime = 500
+let g:paredit_mode = 0
 if has('win32')
 	let g:slimv_lisp = 'c:/lisp/ccl/wx86cl64.exe'
+	"let g:slimv_lisp = 'c:/lisp/sbcl/sbcl.exe'
 else
 	let g:slimv_lisp = '/usr/local/bin/ccl'
 endif

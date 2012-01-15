@@ -25,9 +25,9 @@ function! SmartHomeKey()
 	let l:hcol	=	col('.')
 
 	if l:ccol != l:fcol
-		call cursor(l:lnum, l:fcol)
+		call cursor(line('.'), l:fcol)
 	else
-		call cursor(l:lnum, l:hcol)
+		call cursor(line('.'), l:hcol)
 	endif
 endfun
 
