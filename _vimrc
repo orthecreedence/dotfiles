@@ -48,6 +48,12 @@ endif
 set autoindent		" enable autoindenting
 set smartindent		" derr
 set shiftwidth=4	" how much indent to do when autoindenting
+" use 4-space tabs (still tabs tho, not spaces)
+set tabstop=4
+" ...but 2 spaces for lisp
+autocmd FileType lisp setlocal expandtab
+autocmd FileType lisp setlocal tabstop=2
+
 
 " indenting based on filetype
 filetype indent on
@@ -73,23 +79,17 @@ imap <3-MiddleMouse> <Nop>
 map <4-MiddleMouse> <Nop>
 imap <4-MiddleMouse> <Nop>
 
-" use 4-space tabs (still tabs tho, not spaces)
-set tabstop=4
-autocmd FileType lisp setlocal expandtab
-autocmd FileType lisp setlocal tabstop=2
-
 " better searching (disregard case unless explicitely given caps)
 set incsearch
 set ignorecase
 set smartcase
 
-" informative status line
-"set statusline=%F%m%r%h%w\[TYPE=%Y\ %{&ff}]\ [%l/%L\ (%p%%)]
-
 " syntax coloring
-set t_Co=256
-colorscheme void
 syntax on
+set t_Co=256
+
+" obviously, the only real choice...the universally renowned void colorscheme
+colorscheme void
 
 " highlight matching brackets/braces/etc, only highlight for 1/10th of a
 " second after a mtch is made
@@ -99,7 +99,6 @@ set matchtime=1
 " <Leader>h will turn ON search highlighting. C-c will temporarily disable it
 " for a specific search.
 nmap <Leader>h :set hls!<CR>
-"nmap <C-c> :noh<CR>
 
 " turn off wordwrap
 set nowrap
@@ -110,18 +109,19 @@ set scrolloff=1
 " enable code folding, but essentially always open folds and let ME control when to close folds
 set foldlevel=999			" all folds automatically open
 set foldmethod=syntax
+" PHP folding
 let php_folding = 3			" fold functions (no classes, no {} blocks)
 let g:DisableAutoPHPFolding = 1
 map <Leader>f <Esc>:EnableFastPHPFolds<Cr>
+
+" show current command keys in lower right
+set sc
 
 " show ruler line, col
 set ruler
 
 " disable mouse hide when typing
 set nomh
-
-" show current command keys in lower right
-set sc
 
 " buffers can be hidden, meaning they don't need an open window for each open
 " buffer. 
@@ -139,9 +139,11 @@ call pathogen#runtime_append_all_bundles()
 " -----------------------------------------
 " --------- some shell remappings ---------
 " -----------------------------------------
-" make ctrl+x close the current buffer (without closing the window)
-"nmap <C-x> <Plug>Kwbd
+" make <Leader>x close the current buffer (without closing the window)
 nmap <Leader>x <Plug>Kwbd
+
+" toggle between relative and absolute line numbering with <Leader>n
+nnoremap <Leader>n :call NumberToggle()<cr>
 
 " make ctrl+pageup/down control our buffer selection
 map <C-PageUp> :bprevious <CR>
@@ -151,8 +153,9 @@ map <C-PageDown> :bnext <CR>
 imap <C-BS> <C-W>
 
 " tab/shift+tab on selected text indents
-vmap <Tab> >gv
-vmap <S-Tab> <gv
+" NOTE: disabled because, like, use visual block mode?
+"vmap <Tab> >gv
+"vmap <S-Tab> <gv
 
 " make arrow keys work in visual mode - NOTE - disabled because it interferes
 " with windows mode
@@ -171,18 +174,17 @@ map <F4> :FufCoverageFile <CR>
 map <Leader>b :FufBuffer <CR>
 let g:fuf_enumeratingLimit = 100
 
-" F8 toggles MiniBufExplorer
-"map <F8> :TMiniBufExplorer <CR>
-
-" F9 toggles NERDTree, but make sure MiniBufExplorer is always on top =]
+" F9 toggles NERDTree
 map <F9> :NERDTreeToggle <CR>
-"map <F9> :NERDTreeToggle <CR> :TMiniBufExplorer <CR> :TMiniBufExplorer <CR>
 " -----------------------------------------
 
 
 " -----------------------------------------
 " --------- MiniBufExplorer setup ---------
 " -----------------------------------------
+" F8 toggles MiniBufExplorer
+"map <F8> :TMiniBufExplorer <CR>
+
 " switches tabs with single click
 let g:miniBufExplUseSingleClick = 1
 
@@ -203,13 +205,6 @@ set wildmenu
 " keep swap/backup files from writing
 "set nobackup
 set noswapfile
-
-" load NERDTree on start
-if has("gui")
-	"autocmd VimEnter * NERDTree
-	"autocmd VimEnter * wincmd p		" when starting nerdtree put cursor in main window
-	"autocmd VimEnter * CMiniBufExplorer
-endif
 
 " ------------ Lisp/slimv shit ------------
 let g:swank_log = 0
@@ -241,12 +236,12 @@ let PHP_outdentphpescape = 0				" <? and ?> are indented at the code level
 let PHP_vintage_case_default_indent = 0		" case ...: gets an extra indent (if set to 1)
 
 " add PHP syntax checking
-if !exists("autocommands_loaded")
-	let autocommands_loaded = 1
-	autocmd BufRead *.php set makeprg=c:\cygwin\usr\local\bin\phplint.exe\ --no-print-notices\ --no-print-warnings\ %
-	autocmd BufRead *.php set errorformat=%f:%l:\ %m
-endif
-map <F6> :silent lmake<cr>:lwindow <cr>:redraw!<cr>
+"if !exists("autocommands_loaded")
+	"let autocommands_loaded = 1
+	"autocmd BufRead *.php set makeprg=c:\cygwin\usr\local\bin\phplint.exe\ --no-print-notices\ --no-print-warnings\ %
+	"autocmd BufRead *.php set errorformat=%f:%l:\ %m
+"endif
+"map <F6> :silent lmake<cr>:lwindow <cr>:redraw!<cr>
 
 " ------------c/c++ shit ---------------
 let c_no_if0_fold = 1
