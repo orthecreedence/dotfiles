@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='c:/htdocs/musio.js/controllers'
+let g:netrw_dirhist_2='c:/htdocs/musio.js/controllers/profiles'
+let g:netrw_dirhist_3='c:/htdocs/musio.js/controllers'
+let g:netrw_dirhist_4='c:/htdocs/musio.js/controllers/profiles'
+let g:netrw_dirhist_5='c:/htdocs/musio.js/controllers'
+let g:netrw_dirhist_6='c:/htdocs/musio.js/controllers/profiles'
+let g:netrw_dirhist_7='c:/htdocs'
