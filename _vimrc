@@ -219,7 +219,7 @@ set wildmode=longest:full
 set wildmenu
 
 " keep swap/backup files from writing
-"set nobackup
+set nobackup
 set noswapfile
 
 " ------------ Lisp/slimv shit ------------
