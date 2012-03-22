@@ -264,6 +264,11 @@ let c_no_if0_fold = 1
 let c_no_comment_fold = 1
 set foldnestmax=1
 
+" ------------ HTML generation -----------
+" for :TOhtml
+let html_use_css = 1
+let use_xhtml = 1
+
 " set up font shit for gui
 if has("win32")
 	set guifont=courier_new_cyr:h10
