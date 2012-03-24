@@ -142,21 +142,13 @@ call pathogen#runtime_append_all_bundles()
 set splitright
 set splitbelow
 
-" this is a workaround to an aggravating problem where splitting a window
-" vertically for the first time will change the cursor position on the new
-" window.
-"function MyVertSplit()
-"	let dumbass = winsaveview()
-"	vsplit
-"	call winrestview(dumbass)
-"endfunction
-"nnoremap <C-w>v :call MyVertSplit()<CR>
-
 " -----------------------------------------
 " --------- some shell remappings ---------
 " -----------------------------------------
 " make <Leader>x close the current buffer (without closing the window)
-nmap <Leader>x <Plug>Kwbd
+"nmap <Leader>x <Plug>Kwbd
+nmap <Leader>x <Plug>BufKillBw
+let g:BufKillActionWhenBufferDisplayedInAnotherWindow = 'kill'
 
 " toggle between relative and absolute line numbering with <Leader>n
 nnoremap <Leader>n :call NumberToggle()<cr>
