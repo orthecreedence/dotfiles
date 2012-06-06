@@ -168,7 +168,7 @@ function! s:PHPCustomFolds() " {{{
 
 	" AL - modified so only functions beginning with whitespace are folded (no inline functions)
 	" Fold function with PhpDoc (function foo() {})
-	call s:PHPFoldPureBlock('^\s*\(static\s*\|public\s*\|private\s*\)\?function', s:FOLD_WITH_PHPDOC)
+	call s:PHPFoldPureBlock('^\s*\(\(static\s*\|public\s*\|private\s*\)\+\)\?function', s:FOLD_WITH_PHPDOC)
 	"call s:PHPFoldPureBlock('function', s:FOLD_WITH_PHPDOC)
 
 	" Fold class properties with PhpDoc (var $foo = NULL;)
