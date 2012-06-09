@@ -217,6 +217,7 @@ set noswapfile
 " ------------ Lisp/slimv shit ------------
 let g:swank_log = 0
 let g:slimv_leader = '\'
+let g:slimv_balloon = 0		" fucking hate the balloons and all they do is crash
 let g:slimv_repl_max_len = 200
 let g:slimv_force_repl_scroll = 1
 let g:slimv_updatetime = 500
