@@ -12,6 +12,9 @@ runtime behave/mswin.vim
 " for all new files.
 set fileformats=unix,dos
 
+" allow typing jj quickly to map to Esc 
+inoremap jj <Esc>
+
 " set up a comma leader
 let mapleader = ","
 
@@ -64,10 +67,6 @@ filetype plugin on
 
 " don't change cursor column when switching between buffers
 set nostartofline
-
-" enable paste mode for disabling auto-indent when pasting large blocks of
-" text/code
-set pastetoggle=<F2>
 
 " lol isnt middle-mouse paste annoying? let's disable it.
 map <MiddleMouse> <Nop>
