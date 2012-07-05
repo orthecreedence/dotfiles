@@ -228,7 +228,7 @@ if has('win32')
 	let g:slimv_lisp = 'c:/lisp/ccl/wx86cl.exe'
 	"let g:slimv_lisp = 'c:/lisp/sbcl/sbcl.exe'
 else
-	let g:slimv_lisp = '/usr/local/ccl/lx86cl64'
+	let g:slimv_lisp = '/usr/local/ccl/lx86cl'
 endif
 
 " ------------ PHP shit -------------
