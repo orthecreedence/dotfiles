@@ -276,7 +276,8 @@ else
 endif
 
 " Remove menu bar
-"set guioptions-=m
+set guioptions-=m
+nmap <Leader>menu :set guioptions+=m<CR>
 
 " save window position when switching buffers
 "if v:version >= 700
