@@ -14,9 +14,9 @@ set fileformats=unix,dos
 
 " allow typing jj quickly to map to Esc 
 inoremap kj <Esc>
+inoremap <C-c> <Esc>
 inoremap jj <space>usekj
-inoremap <C-c> <space>usekj
-map ;  usekj:
+map ; :
 set timeoutlen=500
 
 " set up a comma leader
