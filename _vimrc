@@ -13,9 +13,10 @@ runtime behave/mswin.vim
 set fileformats=unix,dos
 
 " allow typing jj quickly to map to Esc 
-inoremap jj <Esc>
-inoremap <C-c> <space>usejj
-map ; :
+inoremap kj <Esc>
+inoremap jj <space>usekj
+inoremap <C-c> <space>usekj
+map ;  usekj:
 set timeoutlen=500
 
 " set up a comma leader
