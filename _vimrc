@@ -16,7 +16,7 @@ set fileformats=unix,dos
 inoremap kj <Esc>
 inoremap <C-c> <Esc>
 map ; :
-set timeoutlen=500
+"set timeoutlen=500
 
 " set up a comma leader
 let mapleader = ","
