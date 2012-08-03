@@ -15,7 +15,6 @@ set fileformats=unix,dos
 " allow typing jj quickly to map to Esc 
 inoremap kj <Esc>
 inoremap <C-c> <Esc>
-inoremap jj <space>usekj
 map ; :
 set timeoutlen=500
 
