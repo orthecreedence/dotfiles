@@ -60,6 +60,8 @@ set tabstop=4
 autocmd FileType lisp setlocal expandtab
 autocmd FileType lisp setlocal tabstop=2
 
+autocmd FileType markdown setlocal expandtab
+autocmd BufRead,BufNewFile *.md set ft=markdown
 
 " indenting based on filetype
 filetype indent on
