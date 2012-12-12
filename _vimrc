@@ -12,6 +12,9 @@ runtime behave/mswin.vim
 " for all new files.
 set fileformats=unix,dos
 
+" Makes vim not overwrite permissions in cygwin files.
+set backupcopy=yes
+
 " allow typing jj quickly to map to Esc 
 inoremap kj <Esc>
 inoremap <C-c> <Esc>
@@ -59,7 +62,10 @@ set tabstop=4
 " ...but 2 spaces for lisp
 autocmd FileType lisp setlocal expandtab
 autocmd FileType lisp setlocal tabstop=2
+au BufNewFile,BufRead *.md set filetype=markdown
 
+autocmd FileType markdown setlocal expandtab
+autocmd FileType liquid setlocal expandtab
 
 " indenting based on filetype
 filetype indent on
