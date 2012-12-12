@@ -66,6 +66,7 @@ au BufNewFile,BufRead *.md set filetype=markdown
 
 autocmd FileType markdown setlocal expandtab
 autocmd FileType liquid setlocal expandtab
+autocmd BufRead,BufNewFile *.md set ft=markdown
 
 " indenting based on filetype
 filetype indent on
