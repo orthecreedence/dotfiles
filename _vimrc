@@ -186,20 +186,20 @@ map <Home> :SmartHomeKey <CR>
 imap <Home> <C-O>:SmartHomeKey<CR>
 
 " FUF mappings
-map <F3> :FufDir <CR>
-map <F4> :FufCoverageFile <CR>
-map <Leader>b :FufBuffer <CR>
-let g:fuf_enumeratingLimit = 100
+"map <F3> :FufDir <CR>
+"map <F4> :FufCoverageFile <CR>
+"map <Leader>b :FufBuffer <CR>
+"let g:fuf_enumeratingLimit = 100
 
 " CtrlP mappings
-"map <F4> :CtrlP<CR>
-"map <Leader>b :CtrlPBuffer<CR>
-"let g:ctrlp_max_height=15
-"let g:ctrlp_working_path_mode=''
-"let g:ctrlp_jump_to_buffer='x'
-"let g:ctrlp_match_window_bottom=1
-"let g:ctrlp_match_window_reversed=1
-"set wildignore+=*\\tmp\\*.*.zip,*.exe,*\\.git\\*
+map <F4> :CtrlP<CR>
+map <Leader>b :CtrlPBuffer<CR>
+let g:ctrlp_max_height=15
+let g:ctrlp_working_path_mode=''
+let g:ctrlp_jump_to_buffer='x'
+let g:ctrlp_match_window_bottom=1
+let g:ctrlp_match_window_reversed=1
+set wildignore+=*\\tmp\\*.*.zip,*.exe,*\\.git\\*
 
 
 " F9 toggles NERDTree
