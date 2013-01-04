@@ -5,7 +5,7 @@ set nocompatible
 " shift text selection, movement/deletion line wrapping and the like. lots of
 " shorcuts to keep you from having to switch from insert to visual/command 
 " mode incessantly. honestly, a lot more useful =]
-runtime behave/mswin.vim
+"runtime behave/mswin.vim
 
 " Make sre we only use UNIX newlines (\n). When reading files, the order below
 " makes no difference, BUT since unix is first, that newline type will be used
@@ -225,6 +225,9 @@ let g:miniBufExplorerMoreThanOne=2
 " reload MinBufExpl on buffer changes
 "autocmd BufRead,BufNew,BufWritePost :call UMiniBufExplorer
 " -----------------------------------------
+
+" init vimnotes
+g:notes_directory = "~/.vimandrew/notes"
 
 " <TAB> behaves like bash, not DOS
 set wildmode=longest:full
