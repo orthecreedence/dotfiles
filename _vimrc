@@ -227,7 +227,7 @@ let g:miniBufExplorerMoreThanOne=2
 " -----------------------------------------
 
 " init vimnotes
-g:notes_directory = "~/.vimandrew/notes"
+"g:notes_directory = "~/.vimandrew/notes"
 
 " <TAB> behaves like bash, not DOS
 set wildmode=longest:full
