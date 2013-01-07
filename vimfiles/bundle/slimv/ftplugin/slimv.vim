@@ -2188,7 +2188,7 @@ function! SlimvArglist( ... )
     call s:SetKeyword()
     if s:swank_connected && c > 0 && line[c-1] =~ '\k\|)\|\]\|}\|"'
         let save_ve = &virtualedit
-        set virtualedit=all
+        set virtualedit=onemore
         " Display only if entering the first space after a keyword
         let matchb = max( [l-200, 1] )
         let [l0, c0] = searchpairpos( '(', '', ')', 'nbW', s:skip_sc, matchb )
