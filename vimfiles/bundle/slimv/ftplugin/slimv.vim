@@ -1,6 +1,6 @@
 " slimv.vim:    The Superior Lisp Interaction Mode for VIM
-" Version:      0.9.9
-" Last Change:  10 Nov 2012
+" Version:      0.9.10
+" Last Change:  15 Dec 2012
 " Maintainer:   Tamas Kovacs <kovisoft at gmail dot com>
 " License:      This file is placed in the public domain.
 "               No warranty, express or implied.
@@ -637,7 +637,7 @@ function! SlimvOpenBuffer( name )
     endif
     setlocal buftype=nofile
     setlocal noswapfile
-    setlocal noreadonly
+    setlocal modifiable
 endfunction
 
 " Go to the end of the screen line
@@ -711,7 +711,6 @@ endfunction
 function! SlimvOpenReplBuffer()
     call SlimvOpenBuffer( g:slimv_repl_name )
     call b:SlimvInitRepl()
-    call PareditInitBuffer()
     if g:slimv_repl_syntax
         call SlimvSetSyntaxRepl()
     else
@@ -734,7 +733,7 @@ function! SlimvOpenReplBuffer()
         inoremap <buffer> <silent>        <Up>     <C-R>=pumvisible() ? "\<lt>Up>" : "\<lt>C-O>:call SlimvHandleUp()\<lt>CR>"<CR>
         inoremap <buffer> <silent>        <Down>   <C-R>=pumvisible() ? "\<lt>Down>" : "\<lt>C-O>:call SlimvHandleDown()\<lt>CR>"<CR>
     else
-        inoremap <buffer> <silent>        <CR>     <C-R>=pumvisible() ? "\<lt>CR>" : SlimvHandleEnterRepl()<CR><C-R>=SlimvArglistOnEnter()<CR>
+        inoremap <buffer> <silent>        <CR>     <C-R>=pumvisible() ? "\<lt>CR>" : SlimvHandleEnterRepl()<CR><C-R>=SlimvArglistOnEnter(&ve)<CR>
         inoremap <buffer> <silent>        <C-Up>   <C-R>=pumvisible() ? "\<lt>Up>" : "\<lt>C-O>:call SlimvHandleUp()\<lt>CR>"<CR>
         inoremap <buffer> <silent>        <C-Down> <C-R>=pumvisible() ? "\<lt>Down>" : "\<lt>C-O>:call SlimvHandleDown()\<lt>CR>"<CR>
     endif
@@ -881,7 +880,7 @@ endfunction
 
 " End updating an otherwise readonly buffer
 function SlimvEndUpdate()
-    setlocal readonly
+    setlocal nomodifiable
     setlocal nomodified
 endfunction
 
@@ -891,7 +890,7 @@ function SlimvQuitInspect( force )
     if exists( 'b:inspect_pos' )
         unlet b:inspect_pos
     endif
-    setlocal noreadonly
+    setlocal modifiable
     silent! %d
     call SlimvEndUpdate()
     if a:force
@@ -903,7 +902,7 @@ endfunction
 " Quit Threads
 function SlimvQuitThreads()
     " Clear the contents of the Threads buffer
-    setlocal noreadonly
+    setlocal modifiable
     silent! %d
     call SlimvEndUpdate()
     b #
@@ -912,7 +911,7 @@ endfunction
 " Quit Sldb
 function SlimvQuitSldb()
     " Clear the contents of the Sldb buffer
-    setlocal noreadonly
+    setlocal modifiable
     silent! %d
     call SlimvEndUpdate()
     b #
@@ -942,7 +941,7 @@ endfunction
 
 " Write help text to current buffer at given line
 function SlimvHelp( line )
-    setlocal noreadonly
+    setlocal modifiable
     if exists( 'b:help_shown' )
         let help = b:help
     else
@@ -950,7 +949,6 @@ function SlimvHelp( line )
     endif
     let b:help_line = a:line
     call append( b:help_line, help )
-    call SlimvEndUpdate()
 endfunction
 
 " Toggle help
@@ -962,9 +960,10 @@ function SlimvToggleHelp()
         let lines = 1
         let b:help_shown = 1
     endif
-    setlocal noreadonly
+    setlocal modifiable
     execute ":" . (b:help_line+1) . "," . (b:help_line+lines) . "d"
     call SlimvHelp( b:help_line )
+    call SlimvEndUpdate()
 endfunction
 
 " Open SLDB buffer and place cursor on the given frame
@@ -1685,7 +1684,9 @@ function! SlimvSendCommand( close )
             else
                 " Expression is not finished yet, indent properly and wait for completion
                 " Indentation works only if lisp indentation is switched on
-                call SlimvArglist()
+                let save_ve = &virtualedit
+                set virtualedit=all
+                call SlimvArglist( save_ve )
                 let l = line('.') + 1
                 call append( '.', '' )
                 call setline( l, repeat( ' ', SlimvIndent(l) ) )
@@ -1737,7 +1738,7 @@ function! SlimvHandleEnter()
 endfunction
 
 " Display arglist after pressing Enter
-function! SlimvArglistOnEnter()
+function! SlimvArglistOnEnter( set_ve )
     if s:arglist_line > 0
         let l = line('.')
         if getline(l) == ''
@@ -1745,12 +1746,13 @@ function! SlimvArglistOnEnter()
             call setline( l, repeat( ' ', SlimvIndent(l) ) )
             normal! $
         endif
-        call SlimvArglist( s:arglist_line, s:arglist_col )
+        call SlimvArglist( a:set_ve, s:arglist_line, s:arglist_col )
     endif
     let s:arglist_line = 0
     let s:arglist_col = 0
 
     " This function is called from <C-R>= mappings, must return empty string
+    let &virtualedit = a:set_ve
     return ''
 endfunction
 
@@ -1826,9 +1828,9 @@ endfunction
 
 " Make a fold at the cursor point in the current buffer
 function SlimvMakeFold()
-    setlocal noreadonly
+    setlocal modifiable
     normal! o    }}}kA {{{0
-    setlocal readonly
+    setlocal nomodifiable
 endfunction
 
 " Handle insert mode 'Enter' keypress in the REPL buffer
@@ -2173,8 +2175,11 @@ function! SlimvDebugThread()
 endfunction
 
 " Display function argument list
-" Optional argument is the number of characters typed after the keyword
-function! SlimvArglist( ... )
+" First argument is the original 'virtualedit' value to restore at the end.
+" When the function is called from a mapping, 'virtualedit' shall be set
+" in the mapping, before any function is called.
+" Optional arguments are the line and column where the function name ends.
+function! SlimvArglist( set_ve, ... )
     if a:0
         " Symbol position supplied
         let l = a:1
@@ -2187,8 +2192,6 @@ function! SlimvArglist( ... )
     let line = getline(l)
     call s:SetKeyword()
     if s:swank_connected && c > 0 && line[c-1] =~ '\k\|)\|\]\|}\|"'
-        let save_ve = &virtualedit
-        set virtualedit=onemore
         " Display only if entering the first space after a keyword
         let matchb = max( [l-200, 1] )
         let [l0, c0] = searchpairpos( '(', '', ')', 'nbW', s:skip_sc, matchb )
@@ -2223,10 +2226,10 @@ function! SlimvArglist( ... )
                 endif
             endif
         endif
-        let &virtualedit=save_ve
     endif
 
     " This function is also called from <C-R>= mappings, must return empty string
+    let &virtualedit = a:set_ve
     return ''
 endfunction
 
@@ -2966,12 +2969,31 @@ function! SlimvComplete( base )
         return []
     endif
     if s:swank_connected
+        " Save current buffer and window in case a swank command causes a buffer change
+        let buf = bufnr( "%" )
+        if winnr('$') < 2
+            let win = -1
+        else
+            let win = winnr()
+        endif
+
         call SlimvFindPackage()
         if g:slimv_simple_compl
             let msg = SlimvCommandGetResponse( ':simple-completions', 'python swank_completions("' . a:base . '")', 0 )
         else
             let msg = SlimvCommandGetResponse( ':fuzzy-completions', 'python swank_fuzzy_completions("' . a:base . '")', 0 )
         endif
+
+        " Restore window and buffer, because it is not allowed to change buffer here
+        if win >= 0 && winnr() != win
+            execute win . "wincmd w"
+            let msg = ''
+        endif
+        if bufnr( "%" ) != buf
+            execute "buf " . buf
+            let msg = ''
+        endif
+
         if msg != ''
             " We have a completion list from SWANK
             let res = split( msg, '\n' )
@@ -3076,8 +3098,8 @@ endfunction
 " Initialize buffer by adding buffer specific mappings
 function! SlimvInitBuffer()
     " Map space to display function argument list in status line
-    inoremap <silent> <buffer> <Space>    <Space><C-R>=SlimvArglist(line('.'),col('.')-1)<CR>
-    inoremap <silent> <buffer> <CR>       <C-R>=pumvisible() ?  "\<lt>CR>" : SlimvHandleEnter()<CR><C-R>=SlimvArglistOnEnter()<CR>
+    inoremap <silent> <buffer> <Space>    <Space><C-O>:let save_ve=&ve<CR><C-O>:set ve=all<CR><C-R>=SlimvArglist(save_ve, line('.'),col('.')-1)<CR>
+    inoremap <silent> <buffer> <CR>       <C-R>=pumvisible() ?  "\<lt>CR>" : SlimvHandleEnter()<CR><C-O>:let save_ve=&ve<CR><C-O>:set ve=all<CR><C-R>=SlimvArglistOnEnter(save_ve)<CR>
     "noremap  <silent> <buffer> <C-C>      :call SlimvInterrupt()<CR>
     if !exists( 'b:au_insertleave_set' )
         let b:au_insertleave_set = 1
