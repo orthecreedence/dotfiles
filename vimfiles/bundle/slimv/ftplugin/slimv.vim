@@ -1,6 +1,6 @@
 " slimv.vim:    The Superior Lisp Interaction Mode for VIM
 " Version:      0.9.10
-" Last Change:  15 Dec 2012
+" Last Change:  09 Jan 2013
 " Maintainer:   Tamas Kovacs <kovisoft at gmail dot com>
 " License:      This file is placed in the public domain.
 "               No warranty, express or implied.
@@ -733,7 +733,7 @@ function! SlimvOpenReplBuffer()
         inoremap <buffer> <silent>        <Up>     <C-R>=pumvisible() ? "\<lt>Up>" : "\<lt>C-O>:call SlimvHandleUp()\<lt>CR>"<CR>
         inoremap <buffer> <silent>        <Down>   <C-R>=pumvisible() ? "\<lt>Down>" : "\<lt>C-O>:call SlimvHandleDown()\<lt>CR>"<CR>
     else
-        inoremap <buffer> <silent>        <CR>     <C-R>=pumvisible() ? "\<lt>CR>" : SlimvHandleEnterRepl()<CR><C-R>=SlimvArglistOnEnter(&ve)<CR>
+        inoremap <buffer> <silent>        <CR>     <C-O>:let save_ve=&ve<CR><C-O>:set ve=all<CR><C-R>=pumvisible() ? "\<lt>CR>" : SlimvHandleEnterRepl()<CR><C-R>=SlimvArglistOnEnter(save_ve)<CR>
         inoremap <buffer> <silent>        <C-Up>   <C-R>=pumvisible() ? "\<lt>Up>" : "\<lt>C-O>:call SlimvHandleUp()\<lt>CR>"<CR>
         inoremap <buffer> <silent>        <C-Down> <C-R>=pumvisible() ? "\<lt>Down>" : "\<lt>C-O>:call SlimvHandleDown()\<lt>CR>"<CR>
     endif
@@ -3099,7 +3099,7 @@ endfunction
 function! SlimvInitBuffer()
     " Map space to display function argument list in status line
     inoremap <silent> <buffer> <Space>    <Space><C-O>:let save_ve=&ve<CR><C-O>:set ve=all<CR><C-R>=SlimvArglist(save_ve, line('.'),col('.')-1)<CR>
-    inoremap <silent> <buffer> <CR>       <C-R>=pumvisible() ?  "\<lt>CR>" : SlimvHandleEnter()<CR><C-O>:let save_ve=&ve<CR><C-O>:set ve=all<CR><C-R>=SlimvArglistOnEnter(save_ve)<CR>
+    inoremap <silent> <buffer> <CR>       <C-O>:let save_ve=&ve<CR><C-O>:set ve=all<CR><C-R>=pumvisible() ? "\<lt>CR>" : SlimvHandleEnter()<CR><C-R>=SlimvArglistOnEnter(save_ve)<CR>
     "noremap  <silent> <buffer> <C-C>      :call SlimvInterrupt()<CR>
     if !exists( 'b:au_insertleave_set' )
         let b:au_insertleave_set = 1
