@@ -1,6 +1,6 @@
 " slimv.vim:    The Superior Lisp Interaction Mode for VIM
 " Version:      0.9.10
-" Last Change:  09 Jan 2013
+" Last Change:  10 Jan 2013
 " Maintainer:   Tamas Kovacs <kovisoft at gmail dot com>
 " License:      This file is placed in the public domain.
 "               No warranty, express or implied.
@@ -1737,7 +1737,12 @@ endfunction
 
 " Display arglist after pressing Enter
 function! SlimvArglistOnEnter()
+    let retval = ""
     if s:arglist_line > 0
+        if col('.') > len(getline('.'))
+            " Stay at the end of line
+            let retval = "\<End>"
+        endif
         let l = line('.')
         if getline(l) == ''
             " Add spaces to make the correct indentation
@@ -1749,8 +1754,8 @@ function! SlimvArglistOnEnter()
     let s:arglist_line = 0
     let s:arglist_col = 0
 
-    " This function is called from <C-R>= mappings, must return empty string
-    return "\<End>"
+    " This function is called from <C-R>= mappings, return additional keypress
+    return retval
 endfunction
 
 " Handle insert mode 'Tab' keypress by doing completion or indentation
@@ -2186,6 +2191,7 @@ function! SlimvArglist( ... )
         let l = line('.')
         let c = col('.') - 1
         if c >= len(getline('.'))
+            " Stay at the end of line
             let c = len(getline('.')) - 1
             let retval = "\<End>"
         endif
@@ -2229,7 +2235,7 @@ function! SlimvArglist( ... )
         endif
     endif
 
-    " This function is also called from <C-R>= mappings, must return empty string
+    " This function is also called from <C-R>= mappings, return additional keypress
     let &virtualedit=save_ve
     return retval
 endfunction
