@@ -1,6 +1,6 @@
 " slimv.vim:    The Superior Lisp Interaction Mode for VIM
 " Version:      0.9.10
-" Last Change:  10 Jan 2013
+" Last Change:  11 Jan 2013
 " Maintainer:   Tamas Kovacs <kovisoft at gmail dot com>
 " License:      This file is placed in the public domain.
 "               No warranty, express or implied.
@@ -2186,17 +2186,22 @@ function! SlimvArglist( ... )
         " Symbol position supplied
         let l = a:1
         let c = a:2 - 1
+        let line = getline(l)
     else
         " Check symbol at cursor position
         let l = line('.')
+        let line = getline(l)
         let c = col('.') - 1
-        if c >= len(getline('.'))
+        if c >= len(line)
             " Stay at the end of line
-            let c = len(getline('.')) - 1
+            let c = len(line) - 1
             let retval = "\<End>"
         endif
+        if line[c-1] == ' '
+            " Is this the space we have just inserted in a mapping?
+            let c = c - 1
+        endif
     endif
-    let line = getline(l)
     call s:SetKeyword()
     if s:swank_connected && c > 0 && line[c-1] =~ '\k\|)\|\]\|}\|"'
         " Display only if entering the first space after a keyword
