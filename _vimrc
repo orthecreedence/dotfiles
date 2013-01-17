@@ -41,6 +41,11 @@ let mapleader = ","
 " backspace can delete prev chars
 set bs=2
 
+" Use CTRL-S for saving, also in Insert mode
+noremap <C-S>		:update<CR>
+vnoremap <C-S>		<C-C>:update<CR>
+inoremap <C-S>		<C-O>:update<CR>
+
 " turn off annoying bells when hitting escape too many times n shit
 set noerrorbells visualbell t_vb=
 if has('autocmd')
