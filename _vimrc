@@ -167,6 +167,8 @@ let g:BufKillActionWhenBufferDisplayedInAnotherWindow = 'kill'
 " toggle between relative and absolute line numbering with <Leader>n
 nnoremap <Leader>n :call NumberToggle()<cr>
 
+nmap <Leader>u :UndotreeToggle
+
 " make ctrl+pageup/down control our buffer selection
 map <C-PageUp> :bprevious <CR>
 map <C-PageDown> :bnext <CR>
