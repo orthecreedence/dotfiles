@@ -298,7 +298,7 @@ if has("win32")
 	set guifont=courier_new_cyr:h10
 	autocmd GUIEnter * simalt ~X
 else
-	set guifont=Courier\ 10\ Pitch\ 10
+	set guifont=Deja\ Vu\ Sans\ Mono\ 10
 	if has("gui")
 		set toolbar=icons,text " how to show the toolbar
 	endif
