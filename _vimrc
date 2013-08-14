@@ -113,6 +113,7 @@ set matchtime=1
 " <Leader>h will turn ON search highlighting. C-c will temporarily disable it
 " for a specific search.
 nmap <Leader>h :set hls!<CR>
+set nohlsearch
 
 " turn off wordwrap
 set nowrap
