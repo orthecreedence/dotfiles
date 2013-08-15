@@ -257,7 +257,7 @@ if has('win32')
 	let g:slimv_lisp = 'c:/lisp/ccl/wx86cl.exe'
 	"let g:slimv_lisp = 'c:/lisp/sbcl/sbcl.exe'
 else
-	let g:slimv_lisp = '/usr/local/ccl/lx86cl'
+	let g:slimv_lisp = '/usr/local/ccl/lx86cl64'
 endif
 
 " ------------ PHP shit -------------
@@ -301,6 +301,7 @@ else
 	set guifont=Deja\ Vu\ Sans\ Mono\ 10
 	if has("gui")
 		set toolbar=icons,text " how to show the toolbar
+		set lsp=2
 	endif
 endif
 
