@@ -113,6 +113,7 @@ set matchtime=1
 " <Leader>h will turn ON search highlighting. C-c will temporarily disable it
 " for a specific search.
 nmap <Leader>h :set hls!<CR>
+set nohlsearch
 
 " turn off wordwrap
 set nowrap
@@ -166,6 +167,8 @@ let g:BufKillActionWhenBufferDisplayedInAnotherWindow = 'kill'
 
 " toggle between relative and absolute line numbering with <Leader>n
 nnoremap <Leader>n :call NumberToggle()<cr>
+
+nmap <Leader>u :UndotreeToggle<CR>
 
 " make ctrl+pageup/down control our buffer selection
 map <C-PageUp> :bprevious <CR>
@@ -254,7 +257,7 @@ if has('win32')
 	let g:slimv_lisp = 'c:/lisp/ccl/wx86cl.exe'
 	"let g:slimv_lisp = 'c:/lisp/sbcl/sbcl.exe'
 else
-	let g:slimv_lisp = '/usr/local/ccl/lx86cl'
+	let g:slimv_lisp = '/usr/local/ccl/lx86cl64'
 endif
 
 " ------------ PHP shit -------------
@@ -295,15 +298,21 @@ if has("win32")
 	set guifont=courier_new_cyr:h10
 	autocmd GUIEnter * simalt ~X
 else
-	set guifont=Courier\ 10\ Pitch\ 10
+	set guifont=Deja\ Vu\ Sans\ Mono\ 10
 	if has("gui")
 		set toolbar=icons,text " how to show the toolbar
+		set lsp=2
 	endif
 endif
 
 " Remove menu bar
 set guioptions-=m
 nmap <Leader>menu :set guioptions+=m<CR>
+
+" Remove scroll bars
+set guioptions+=LlRrb
+set guioptions-=LlRrb
+nmap <Leader>scroll :set guioptions+=Lr<CR>
 
 " save window position when switching buffers
 "if v:version >= 700
