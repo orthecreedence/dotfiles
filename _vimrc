@@ -46,6 +46,11 @@ noremap <C-S>		:update<CR>
 vnoremap <C-S>		<C-C>:update<CR>
 inoremap <C-S>		<C-O>:update<CR>
 
+" Shift-insert pastes from clipboard
+noremap <S-Insert>	"+P
+vnoremap <S-Insert>	"+P
+inoremap <S-Insert>	<C-O>"+P
+
 " turn off annoying bells when hitting escape too many times n shit
 set noerrorbells visualbell t_vb=
 if has('autocmd')
