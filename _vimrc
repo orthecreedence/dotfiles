@@ -314,4 +314,22 @@ nmap <Leader>menu :set guioptions+=m<CR>
 " Remove toolbar
 set guioptions-=T
 
+" add a word processing function
+function! WordProcessorMode()
+	setlocal linebreak
+	setlocal wrap
+	map j gj
+	map k gk
+	setlocal nonu
+
+
+
+	setlocal textwidth=80
+	setlocal fo=atn
+	setlocal linebreak
+	setlocal autoindent
+	setlocal spell spelllang=en_us
+	"setlocal smartindent
+endfunction
+com! WordP call WordProcessorMode()
 
