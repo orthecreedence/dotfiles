@@ -331,19 +331,21 @@ set guioptions-=T
 " add a word processing function
 function! WordProcessorMode()
 	setlocal linebreak
+	setlocal spell spelllang=en_us
+	"setlocal autoindent
+	"setlocal smartindent
+
+	" auto-wrap method
 	setlocal wrap
+	setlocal nonu
+	setlocal fo=n
 	map j gj
 	map k gk
-	setlocal nonu
 
-
-
-	setlocal textwidth=80
-	setlocal fo=atn
-	setlocal linebreak
-	setlocal autoindent
-	setlocal spell spelllang=en_us
-	"setlocal smartindent
+	" forced-width method
+	"setlocal textwidth=80
+	"setlocal linebreak
+	"setlocal fo=atn
 endfunction
 com! WordP call WordProcessorMode()
 
