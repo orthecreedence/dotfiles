@@ -1,4 +1,2 @@
-autocmd BufNewFile,BufRead *.toml set filetype=toml
-
-" Rust uses Cargo.toml and Cargo.lock (both are toml files).
-autocmd BufNewFile,BufRead Cargo.lock set filetype=toml
+" Go dep and Rust use several TOML config files that are not named with .toml.
+autocmd BufNewFile,BufRead *.toml,pdm.lock,Gopkg.lock,Cargo.lock,*/.cargo/config,*/.cargo/credentials,Pipfile set filetype=toml
